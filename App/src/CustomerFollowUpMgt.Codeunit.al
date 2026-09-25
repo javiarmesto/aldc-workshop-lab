@@ -7,8 +7,15 @@ codeunit 71200 "OW Customer Follow-up Mgt."
     begin
         CheckRequiredDate(AsOfDate);
         CheckOptionalDate(NextReviewDate);
-        // TODO (full day Lab 01 / Directions Lab 1): implement the four states in contract.md.
-        exit("OW Review Status"::Unscheduled);
+
+        if NextReviewDate = 0D then
+            exit("OW Review Status"::Unscheduled);
+        if NextReviewDate < AsOfDate then
+            exit("OW Review Status"::Overdue);
+        if NextReviewDate = AsOfDate then
+            exit("OW Review Status"::DueToday);
+
+        exit("OW Review Status"::Scheduled);
     end;
 
     procedure GetNextReviewDate(ReviewDate: Date): Date

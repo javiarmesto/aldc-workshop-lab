@@ -1,3 +1,5 @@
+> **Checkpoint Lab 01:** continúa en Lab 02. GetReviewStatus está resuelto y MarkReviewed pendiente. Lee [procedencia y preparación](evidence/checkpoint-source.md). Las referencias al starter sin tocar que siguen describen main.
+
 # ALDC Workshop Lab · Customer Follow-up
 
 Repositorio de prácticas de los talleres de **Roberto Corella y Javier Armesto** sobre desarrollo AL con agentes y ALDC. Es una plantilla: cada participante crea su propia copia y trabaja en ella durante el taller y después.
