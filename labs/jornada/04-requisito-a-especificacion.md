@@ -2,6 +2,16 @@
 
 **Objetivo:** obtener una especificación que otra persona pueda revisar. **Tiempo:** 20 minutos + 6 de revisión cruzada. **Punto de partida:** contrato, starter, ALDC y BCQuality montado. **Entrega:** arquitectura, spec, criterios citados y decisiones pendientes visibles.
 
+## De dónde vienes y qué cambia ahora
+
+En el Lab 03 mejoraste una instrucción del plugin y observaste su efecto. Ahora vas a convertir un requisito en una arquitectura y una especificación revisables. Al terminar este lab habrás completado cuatro de los ocho laboratorios.
+
+ALDC y sus primitivas ya están preparados desde el preflight. No necesitas reinstalarlos ni restaurar las copias locales del ejercicio. Continúa en tu workspace y rama de trabajo, con GetReviewStatus resuelto y MarkReviewed pendiente.
+
+Abre un chat nuevo y selecciona **al-architect**. Primero pide la arquitectura y revisa su respuesta. Solo después de aprobarla utiliza **al-spec.create**. La implementación corresponde al Lab 05.
+
+Para el diseño, consulta BCQuality como conocimiento desde la carpeta del workspace; identifica las fuentes realmente leídas y las limitaciones de acceso. Conserva la implementación existente de GetReviewStatus al especificar el comportamiento completo.
+
 ## Requisito
 
 «Desde la ficha de cliente, indicar la próxima revisión, ver su estado y marcar una revisión realizada. Al hacerlo, registrar la fecha de trabajo y programar la siguiente a 30 días naturales.» Fuera de alcance: historial, correos, tareas programadas, bloqueos y documentos de venta.

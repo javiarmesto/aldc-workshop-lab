@@ -1,5 +1,17 @@
 # Laboratorios
 
+## Cómo avanza el taller
+
+ALDC se instala y prepara en el preflight. Los Labs 01–03 enseñan a usar primitivas del ejercicio, distribuirlas como plugin y mejorar una instrucción a partir de evidencia. El Lab 04 comienza el uso explícito del flujo de arquitectura y especificación de ALDC; el Lab 05 implementa lo aprobado.
+
+| Material | Procedencia | Uso |
+|---|---|---|
+| Agentes, instrucciones y skills de ALDC | Toolkit preparado en el preflight | Permanecen disponibles durante toda la jornada |
+| Skill review-date-rules, agente followup-reviewer y prompt | Plantillas del ejercicio | Copias locales en Lab 01; plugin desde Lab 02 |
+| BCQuality | Carpeta adicional del workspace | Conocimiento citado para diseño y revisión |
+
+Al retirar las primitivas locales del Lab 02 no retires ALDC. Su presencia puede influir también en las primeras revisiones; registra el contexto realmente cargado.
+
 ## Jornada completa · castellano · GitHub Copilot Chat
 
 | Lab | Bloque | Práctica | Guía |

@@ -72,3 +72,9 @@ Guarda el cambio exacto de la skill y referencias a las respuestas antes/despué
 ## Qué conservas para el siguiente lab
 
 La skill mejorada en tu plugin de trabajo y la comparación en `evidence/`. Revisa y guarda la evidencia en Git antes de pasar al Lab 04. No necesitas completar MarkReviewed en este laboratorio.
+
+## Paso al Lab 04
+
+ALDC lleva instalado desde el preflight; ahora comenzarás a utilizar expresamente su flujo de arquitectura y especificación. Conserva el plugin y abre un chat nuevo con **al-architect**, siguiendo la [guía del Lab 04](04-requisito-a-especificacion.md). No necesitas crear un checkpoint de recuperación para continuar: esas ramas las prepara el instructor.
+
+Para comparar este lab, utiliza la respuesta real del Lab 02, no una sesión antigua con otras primitivas. Ambas revisiones pueden haber usado ya el plugin. Basta con conservar las respuestas y comprobar las lecturas pertinentes; no hace falta una búsqueda extensa por el historial de sesiones. Si intervienen otras skills, instrucciones o herramientas, anótalo como una limitación de la comparación.
