@@ -126,3 +126,34 @@ El lab puede terminar sin hallazgos si la función es correcta. El éxito es dem
 | No se ve una herramienta MCP | Servidor disponible y herramientas habilitadas |
 
 Instalar el plugin no demuestra haber usado la skill: guarda la invocación y su retorno.
+
+## Cierre guiado
+
+Usa el prompt del paso 4 con lectura del plugin y herramientas Microsoft Learn habilitadas. Tras revisar la respuesta, guarda la evidencia tú mismo si el revisor no puede escribir. Puedes pedir el contenido en el chat:
+
+```text
+Resume esta sesión para evidence/lab02-run-note.md:
+ruta y origen de la skill realmente utilizada, revisión realizada,
+consulta Microsoft Learn y resultado, limitaciones y archivos cambiados.
+No atribuyas el origen de un servidor MCP al plugin sin comprobarlo.
+Devuelve el texto en el chat. No modifiques archivos ni uses Git.
+```
+
+El resultado esperado es identificar y utilizar el plugin; no hace falta encontrar un defecto. Registra las eliminaciones de las copias locales como parte de la transición y conserva ALDC.
+
+## Guardar el laboratorio
+
+Guarda la evidencia indicada y revisa los archivos antes del commit. Los comandos los ejecutas tú desde la raíz; el agente no necesita permisos de escritura en Git.
+
+```powershell
+git status --short
+git add -u -- .github/agents/followup-reviewer.agent.md .github/prompts/review-followup.prompt.md .github/skills/review-date-rules/
+git add -- evidence/lab02-run-note.md
+git diff --cached --stat
+git diff --cached
+git commit -m "docs: cerrar Lab 02"
+git push
+git rev-parse HEAD
+```
+
+Si aún no hay upstream, usa `git push -u origin <tu-rama>`. No ejecutes el commit si el área preparada incluye cambios ajenos al lab; retíralos del staging sin borrar tu trabajo. No incluyas configuración personal, paquetes, cobertura ni telemetría.

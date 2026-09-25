@@ -78,3 +78,36 @@ La skill mejorada en tu plugin de trabajo y la comparación en `evidence/`. Revi
 ALDC lleva instalado desde el preflight; ahora comenzarás a utilizar expresamente su flujo de arquitectura y especificación. Conserva el plugin y abre un chat nuevo con **al-architect**, siguiendo la [guía del Lab 04](04-requisito-a-especificacion.md). No necesitas crear un checkpoint de recuperación para continuar: esas ramas las prepara el instructor.
 
 Para comparar este lab, utiliza la respuesta real del Lab 02, no una sesión antigua con otras primitivas. Ambas revisiones pueden haber usado ya el plugin. Basta con conservar las respuestas y comprobar las lecturas pertinentes; no hace falta una búsqueda extensa por el historial de sesiones. Si intervienen otras skills, instrucciones o herramientas, anótalo como una limitación de la comparación.
+
+## Agente y prompt de cierre
+
+Repite la revisión con el mismo modo Agent, modelo y herramientas del Lab 02 cuando sea posible. Tras comparar las dos respuestas, puedes pedir:
+
+```text
+Redacta la evidencia del Lab 03 a partir de las dos respuestas que
+te proporciono y del cambio exacto de la skill.
+Usa como antes la respuesta real del Lab 02. Registra rutas, cambio,
+efecto observado y diferencias de herramientas o contexto.
+No busques más logs ni repitas tests. No inventes una mejora si no
+la hubo ni atribuyas causalidad exclusiva a una sola ejecución.
+Devuelve el texto en el chat para evidence/lab03-before-after.md.
+No modifiques archivos ni uses Git.
+```
+
+Copia el resultado revisado a la ficha de evidencia. Incluye el fragmento exacto de la skill externa.
+
+## Guardar el laboratorio
+
+Guarda la evidencia indicada y revisa los archivos antes del commit. Los comandos los ejecutas tú desde la raíz; el agente no necesita permisos de escritura en Git.
+
+```powershell
+git status --short
+git add -- evidence/lab03-before-after.md
+git diff --cached --stat
+git diff --cached
+git commit -m "docs: cerrar Lab 03"
+git push
+git rev-parse HEAD
+```
+
+Si aún no hay upstream, usa `git push -u origin <tu-rama>`. No ejecutes el commit si el área preparada incluye cambios ajenos al lab; retíralos del staging sin borrar tu trabajo. No incluyas configuración personal, paquetes, cobertura ni telemetría.

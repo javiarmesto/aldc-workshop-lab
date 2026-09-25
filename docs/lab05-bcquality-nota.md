@@ -18,3 +18,11 @@ La publicación y ejecución manual de los tests es otro asunto. El agente decla
 ## Continuidad del taller
 
 El Lab 05 practica implementación delegada, revisión y validación del incremento. Conserva esta limitación en su evidencia y comprueba expresamente el flujo de revisión de BCQuality en el Lab 06. No repitas una instalación únicamente por el mensaje “not live-invoked”.
+
+## Aclaración tras el Lab 06
+
+BCQuality puede distribuir un protocolo de revisión como skill de instrucciones. Ejecutarlo como agente no requiere necesariamente un servicio externo ni una herramienta con el nombre BCQuality. Hay que distinguir leer un artículo, cargar el protocolo y aplicar sus pasos de selección y revisión.
+
+En el segundo recorrido del Lab 06, el revisor declaró aplicar Entry y al-performance-review, citó el artículo pertinente y contrastó después el cambio mediante herramientas GitHub. La disponibilidad de esas herramientas permitió continuar sin terminal local. Esto documenta ese recorrido; no demuestra retrospectivamente que el flujo se ejecutara en el Lab 05.
+
+Por tanto, “not live-invoked” no basta para diagnosticar ausencia de BCQuality o necesidad de reinstalación. Registra el flujo efectivamente aplicado y su evidencia. Mantén separado el resultado de un criterio inspeccionado del estado de una revisión más amplia.

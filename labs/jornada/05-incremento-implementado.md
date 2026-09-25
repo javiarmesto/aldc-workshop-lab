@@ -2,9 +2,9 @@
 
 **Objetivo:** completar el comportamiento y comprobarlo con C01–C12. **Tiempo:** 27 minutos. **Punto de partida:** arquitectura y spec aprobadas; starter con el trabajo del Lab 01. **Entrega:** diff acotado, compilación, resultados y revisión inicial.
 
-## Petición al Conductor
+## Preparar el chat
 
-> Usa la arquitectura y la especificación aprobadas. Planifica y delega la implementación y revisión de Customer Follow-up. Completa los TODOs pendientes sin cambiar firmas, IDs ni validaciones suministradas. Conserva el trabajo válido de GetReviewStatus. Devuelve diff, operaciones ejecutadas, resultados y pendientes.
+Selecciona Conductor y utiliza los [prompts de planificación, aprobación y cierre](#prompts-para-planificar-aprobar-y-cerrar) de esta guía. Primero revisa el plan; después autoriza la implementación.
 
 ## Casos que completan el incremento
 
@@ -54,3 +54,57 @@ Un hallazgo útil tiene criterio, localización, observación, consecuencia y co
 ## Aceptación y recorrido en Customer Card (tras el Lab 06)
 
 Sigue [`material/demo-storyboard.md`](../material/demo-storyboard.md): WorkDate 15/10/2026, cuatro estados, **Mark as reviewed** (última 15/10, próxima 14/11), cerrar y reabrir, repetir la acción. Asigna el permission set **OW FOLLOWUP** junto a un rol que pueda editar Customer.
+
+## Prompts para planificar, aprobar y cerrar
+
+Abre un chat nuevo con **AL Development Conductor**. Necesita lectura del proyecto y capacidad de delegación; las herramientas de edición y compilación deben estar disponibles para los agentes que las utilicen.
+
+```text
+Usa la arquitectura y especificación aprobadas de Customer Follow-up.
+Invoco Conductor para practicar el recorrido del taller aunque sea LOW.
+Planifica una fase mínima para implementar solo MarkReviewed y delegar
+implementación y revisión. Conserva GetReviewStatus, GetNextReviewDate,
+firmas, objetos, validaciones y tests.
+Presenta el plan y espera mi aprobación antes de implementar o delegar
+cambios. Si hay conflicto con tus instrucciones, explícalo.
+La aceptación requiere resultados reales de compilación y C01–C12.
+```
+
+Lee el plan y, si encaja:
+
+```text
+Apruebo el plan. Guárdalo y procede con implementación delegada y
+revisión. Si necesitas publicación o tests manuales, indica la operación
+y espera mis resultados. No presentes operaciones pendientes como hechas.
+No hagas operaciones de escritura en Git.
+```
+
+Después de publicar y ejecutar:
+
+```text
+He ejecutado manualmente <casos> tras publicar App en <sandbox>.
+Resultado real: <resultado y errores, si existen>.
+Regístralo en evidence/lab05-run-note.md con fecha <fecha>, atribuyéndome
+la ejecución. No inventes logs ni capturas.
+Actualiza el cierre, plan y memory.md. Si hay fallos, conserva la
+aceptación pendiente. Distingue la revisión directa de criterios de la
+ejecución del flujo BCQuality y comprueba los recuentos del informe.
+No cambies más código ni tests, no uses Git y no empieces el Lab 06.
+```
+
+
+## Guardar el Lab 05
+
+Anota el commit base antes de guardar el incremento (`git rev-parse HEAD`). Añade el código y evidencia, y después cada documento de plan/revisión/cierre modificado por su ruta real; excluye telemetría.
+
+```powershell
+git add -- App/src/CustomerFollowUpMgt.Codeunit.al evidence/lab05-run-note.md
+# Repite para cada documento del plan o revisión:
+git add -- '<ruta-del-documento>'
+git diff --cached
+git commit -m "feat: completar MarkReviewed y validar Lab 05"
+git push
+git rev-parse HEAD
+```
+
+Conserva ambos SHA para el Lab 06. No cierres la aceptación hasta confirmar los 12 tests.
