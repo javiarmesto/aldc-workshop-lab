@@ -8,4 +8,3 @@
 | [`evidence`](evidence) | Fichas de ejecución, checkpoint humano, diseño BCQuality y retrospectiva. |
 
 Los archivos terminan en `.example` para que no se activen solos: cópialos y quita el sufijo cuando la guía lo indique.
-

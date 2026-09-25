@@ -9,4 +9,3 @@
 | Estructura que simplificarías / Structure to simplify | | |
 
 Si comparas tiempos, utiliza el mismo alcance y explica las diferencias de entorno. / Compare timing only for equivalent scope and explain environment differences.
-

@@ -17,4 +17,3 @@ Puedes preparar el paquete con `./tools/Prepare-Lab02.ps1 -Action Prepare` desde
 Como alternativa a Personalización, la configuración local del editor se realiza en settings.json del usuario usando una ruta absoluta y chat.pluginLocations. No distribuyas rutas locales propias como si fueran universales. Antes de usar el paquete revisa sus componentes y herramientas efectivas.
 
 Fuentes: [formato del paquete](https://agent-plugins.org/plugin-authors/manifest), [MCP portable](https://agent-plugins.org/plugin-authors/mcp-servers), [plugins en VS Code](https://code.visualstudio.com/docs/agent-customization/agent-plugins).
-

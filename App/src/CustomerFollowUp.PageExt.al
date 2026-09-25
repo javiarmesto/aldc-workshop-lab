@@ -67,4 +67,3 @@ pageextension 71200 "OW Customer Follow-up Card" extends "Customer Card"
         ReviewMgt: Codeunit "OW Customer Follow-up Mgt.";
         ReviewStatus: Enum "OW Review Status";
 }
-

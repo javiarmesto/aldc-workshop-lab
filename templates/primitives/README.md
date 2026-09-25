@@ -11,4 +11,3 @@ Copia estos ejemplos a un workspace de práctica, quita el sufijo `.example` y c
 `.github/copilot-instructions.md` lo instala ALDC. No lo sustituyas: las convenciones del taller van en `.github/instructions/` con su propio `applyTo`.
 
 Coloca también el contrato del laboratorio como `contract.md` en la raíz del workspace. Verifica las herramientas propuestas con el selector del editor. La plantilla de skill está en el ejemplo de plugin; durante el bloque de primitivas puede copiarse a `.github/skills/review-date-rules/SKILL.md` junto con sus recursos y después empaquetarse.
-

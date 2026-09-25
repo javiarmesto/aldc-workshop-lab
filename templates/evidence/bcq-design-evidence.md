@@ -23,4 +23,3 @@ Show only the evidence that exists. Do not fill every row by inventing a tool ca
 ## Follow-up prompt
 
 > Return a compact run card naming the caller, executing role, requested objective, surface, ALDC revision and current artifact. Then show a table of BCQuality reading, contextual selection and application: exact paths actually read, why each applies, and the design decision or specification criterion it informed. Include the actual relevant tool calls and what each established; explain why unused capabilities were unnecessary when material. Distinguish observed results from pending checks. Do not implement AL, run a review provider, compile, publish, or request architecture approval in this evidence-only response.
-

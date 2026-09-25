@@ -10,4 +10,3 @@
     "al.codeAnalyzers": ["${CodeCop}", "${UICop}", "${PerTenantExtensionCop}"]
   }
 }
-

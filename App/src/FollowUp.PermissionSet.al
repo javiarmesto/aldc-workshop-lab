@@ -7,4 +7,3 @@ permissionset 71200 "OW FOLLOWUP"
     Permissions = codeunit "OW Customer Follow-up Mgt." = X;
     // Standard Customer read/modify and Customer Card access come from the user's existing role.
 }
-

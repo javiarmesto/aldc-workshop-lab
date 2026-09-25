@@ -17,4 +17,3 @@ Preparar un cliente sintético, el código revisado publicado y una sesión con 
 Comprobar además que un usuario sin permiso de modificación de Customer no puede ejecutar con éxito la actualización. TestPermissions=Disabled no comprueba ese permiso.
 
 La interfaz y los textos AL suministrados están en inglés para compartir la misma app con Directions. La explicación de la jornada está en castellano. Si se usa grabación, identificarla como ensayo previo con revisión y entorno.
-

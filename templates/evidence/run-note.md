@@ -26,4 +26,3 @@ Qué pasó, qué falló, qué queda sin ejecutar. Referencia a archivos de salid
 ## Siguiente acción
 
 Corrección o decisión concreta, responsable y evidencia que falta.
-

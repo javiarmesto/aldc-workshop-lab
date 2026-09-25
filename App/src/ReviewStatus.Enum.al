@@ -8,4 +8,3 @@ enum 71200 "OW Review Status"
     value(2; DueToday) { Caption = 'Due today'; }
     value(3; Scheduled) { Caption = 'Scheduled'; }
 }
-

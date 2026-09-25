@@ -8,4 +8,3 @@ param(
     [string]$IncrementCommit
 )
 & (Join-Path $PSScriptRoot 'Test-LabPrerequisites.ps1') -Lab 7 @PSBoundParameters
-

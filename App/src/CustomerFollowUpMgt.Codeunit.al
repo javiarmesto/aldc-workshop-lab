@@ -43,4 +43,3 @@ codeunit 71200 "OW Customer Follow-up Mgt."
         DateRequiredErr: Label 'A nonblank reference date is required.';
         ClosingDateErr: Label 'Use a normal calendar date, not a closing date.';
 }
-

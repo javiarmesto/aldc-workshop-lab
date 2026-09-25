@@ -25,4 +25,3 @@ tableextension 71200 "OW Customer Follow-up" extends Customer
         }
     }
 }
-

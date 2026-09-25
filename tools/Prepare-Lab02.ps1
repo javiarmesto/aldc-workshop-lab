@@ -84,4 +84,3 @@ if ($Action -eq 'RestoreLocal') {
     Write-Host 'Disable the plugin in VS Code before using the restored local components.'
     Write-Host "The backup directory remains in place: $BackupPath"
 }
-

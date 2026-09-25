@@ -121,4 +121,3 @@ git rev-parse HEAD
 ```
 
 Si aún no hay upstream, usa `git push -u origin <tu-rama>`. No ejecutes el commit si el área preparada incluye cambios ajenos al lab; retíralos del staging sin borrar tu trabajo. No incluyas configuración personal, paquetes, cobertura ni telemetría.
-

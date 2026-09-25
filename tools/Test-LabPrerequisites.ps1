@@ -128,4 +128,3 @@ switch ($Lab) {
     }
 }
 Report 'FIN' 'Revisa FALTA/REVISAR y completa MANUAL. No es un certificado de aprobacion del laboratorio.'
-

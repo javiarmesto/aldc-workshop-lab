@@ -102,4 +102,3 @@ git rev-parse HEAD
 ```
 
 El resultado esperado es una aceptación independiente o una devolución concreta y un flujo que podáis adaptar a vuestro equipo. Una devolución bien justificada también completa el ejercicio.
-

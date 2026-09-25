@@ -128,4 +128,3 @@ codeunit 71300 "OW Follow-up Tests"
     var
         ReviewMgt: Codeunit "OW Customer Follow-up Mgt.";
 }
-
