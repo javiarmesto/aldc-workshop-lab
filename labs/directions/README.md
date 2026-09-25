@@ -42,7 +42,7 @@ Pass approved architecture/specification to the conductor. Observe planning, imp
 
 > Implement the approved Customer Follow-up increment. Complete GetReviewStatus and MarkReviewed while preserving signatures, object ranges, supplied helpers and unrelated Customer fields. Use the installed ALDC workflow to delegate the required implementation and review. Compile and run the prepared acceptance tests. Return changed files, actual operations, results and pending checks.
 
-Use Publish & Run after edits or the rehearsed execution route for your surface. In Claude, a participant may execute from VS Code and supply the real output. Record whether the tool or the participant ran the operation.
+Follow [Running the tests](../../docs/preflight.en.md#running-the-tests). Use **Publish & Run** after edits or the rehearsed execution route for your surface. The goal after Lab 2 is **12 of 12 passing tests**. In Claude, a participant may execute from VS Code and supply the real output. Record whether the tool or the participant ran the operation.
 
 ## Lab 3: review
 

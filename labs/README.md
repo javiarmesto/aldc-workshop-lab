@@ -22,3 +22,5 @@ Entre el Lab 05 y el Lab 06 hay un bloque de revisión y corrección (18 min) y,
 ## Material de trabajo
 
 [`material/`](material): hoja de especificación, ficha antes/después, tarjeta de entrada ALDC, recorrido de la ficha y ampliación opcional de historial.
+
+[Scripts para participantes](../tools/README.md): preparar las primitivas del Lab 01, montar el plugin del Lab 02 y retirar/restaurar las copias locales. Las guías enlazan cada comando en el paso correspondiente.

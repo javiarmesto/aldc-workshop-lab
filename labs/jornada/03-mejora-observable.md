@@ -4,11 +4,11 @@
 
 ## Qué mirar en una sesión
 
-Archivos consultados, skill o agente invocado, llamada de herramienta, salida o error y diff. Abre **Agent Debug Logs** desde el menú del chat. Si tienes AI Engineer Coach, usa Context Health, Anti-Patterns y Skill Finder.
+Archivos consultados, skill o agente invocado, llamada de herramienta, salida o error y diff. El lab se hace con **Agent Debug Logs** (menú del chat). **AI Engineer Coach** es opcional: si lo tienes instalado, usa Context Health, Anti-Patterns y Skill Finder como fuente adicional de señales; si no, el ponente lo enseña en la demo.
 
 ## Pasos
 
-1. Localiza una señal en los logs o en Coach.
+1. Localiza una señal en Agent Debug Logs (o en Coach, si lo tienes).
 2. Cambia una sola instrucción o una petición concreta (por ejemplo, cuándo debe activarse `review-date-rules`).
 3. Repite la tarea en una sesión nueva y compara operaciones y salida.
 
