@@ -5,3 +5,4 @@ manifest:
   required_fields:
     - description
   scripts: deny
+

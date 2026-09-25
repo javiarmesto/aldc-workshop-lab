@@ -33,3 +33,4 @@ foreach ($entry in $mapping) {
     Write-Host "Ready: $target"
 }
 Write-Host 'ALDC copilot-instructions.md and AL source files were not modified.'
+

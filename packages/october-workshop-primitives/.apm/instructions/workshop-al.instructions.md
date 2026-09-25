@@ -10,3 +10,4 @@ Use extension objects and supported integration points when working with standar
 When returning implementation results, identify the changed files and the compiler or test commands actually executed, including their outcome. Record checks that remain unexecuted separately.
 
 For Customer Follow-up, obtain WorkDate in the UI and pass an explicit reference date to the status function. Apply the approved calendar-day and repeat-action rules. Keep business logic in the codeunit and verify persisted dates after the action.
+

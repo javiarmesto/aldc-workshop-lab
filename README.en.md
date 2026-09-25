@@ -29,3 +29,6 @@ git -C bcquality checkout --detach 07e324ddbc42597c479e041e06a7833740e05d0f
 | `evidence/` | Where you keep architecture, specification, results and decisions. |
 
 Object ranges: App 71200–71249, Test 71300–71349. BC 28.0+ (tested on BC online 29), runtime 16.0. With the untouched starter, exactly C02, C03, C04, C11 and C12 fail; your goal is 12 of 12. The reference solution is published after the workshop.
+
+
+Stage recovery and commit instructions (Spanish): [checkpoints](docs/checkpoints.md).

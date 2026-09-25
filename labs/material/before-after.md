@@ -29,3 +29,4 @@ No atribuyas el caso observado en el ensayo del instructor a tu propia ejecució
 Conclusión limitada a lo observado. ¿Hay otra explicación posible? ¿Qué repetirías para contrastarla?
 
 La edición de una skill fuera del repositorio no se guarda con el commit del proyecto: conserva aquí el cambio exacto y la identificación del plugin utilizado.
+

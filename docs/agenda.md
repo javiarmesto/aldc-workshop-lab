@@ -40,3 +40,4 @@
 | 01:43–01:45 | 14 | Your method for the next extension | 2 | Guidance / demo |
 
 [Participant guide](../labs/directions/README.md).
+

@@ -26,3 +26,4 @@ BCQuality puede distribuir un protocolo de revisión como skill de instrucciones
 En el segundo recorrido del Lab 06, el revisor declaró aplicar Entry y al-performance-review, citó el artículo pertinente y contrastó después el cambio mediante herramientas GitHub. La disponibilidad de esas herramientas permitió continuar sin terminal local. Esto documenta ese recorrido; no demuestra retrospectivamente que el flujo se ejecutara en el Lab 05.
 
 Por tanto, “not live-invoked” no basta para diagnosticar ausencia de BCQuality o necesidad de reinstalación. Registra el flujo efectivamente aplicado y su evidencia. Mantén separado el resultado de un criterio inspeccionado del estado de una revisión más amplia.
+

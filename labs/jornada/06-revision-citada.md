@@ -106,3 +106,4 @@ Después realiza el [recorrido de aceptación](../material/demo-storyboard.md) y
 | Criterio citado y diff | Regla, aplicabilidad e implementación | Todas las rutas de ejecución |
 | Compilación | Validez para el compilador | Reglas de negocio |
 | Tests y recorrido | Casos ejecutados | Todo escenario posible |
+

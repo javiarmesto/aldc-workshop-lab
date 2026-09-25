@@ -9,3 +9,4 @@ Leer el contrato vigente y localizar dónde se obtiene la fecha de referencia. E
 Comprobar fecha vacía, anterior, igual y posterior. Consultar boundary-cases.md para los ejemplos docentes. Distinguir días naturales, días laborables y meses según el contrato. Revisar desde qué fecha cuenta la reprogramación y qué ocurre al repetir la acción.
 
 Si cambia un registro, comprobar persistencia y conservación de campos ajenos al cambio. Relacionar cada discrepancia con archivo, caso y evidencia. Proponer correcciones solo cuando la observación o el contrato las justifiquen. Si no hay ejecución, escribir «no ejecutado» en observado.
+

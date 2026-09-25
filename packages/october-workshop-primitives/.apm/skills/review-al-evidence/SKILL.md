@@ -12,3 +12,4 @@ For a finding, identify the affected location, the expected behavior and the obs
 Separate code inspection and knowledge citations from executed compiler or test results. State which revision and environment the available execution evidence covers. Do not report a check as executed when the task only supplies expected output.
 
 Recommend a focused correction only when the evidence supports it. If no actionable issue is found, report the scope inspected and any remaining uncertainty. Use the response format requested by the caller.
+

@@ -13,3 +13,4 @@ Guarda aquí lo que produces en cada laboratorio. / Keep what each lab produces 
 | `lab08-acceptance.md` | Decisión de la otra pareja |
 
 Usa las fichas de [`templates/evidence`](../templates/evidence). Anota como **pendiente** lo que no se haya ejecutado de verdad.
+

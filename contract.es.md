@@ -31,3 +31,4 @@ El starter incluye campos, enum, extensión de ficha, permisos, ayudantes de val
 `cases.csv` define C01–C12. En el starter se esperan pendientes/fallidos C02, C03, C04, C11 y C12. La referencia debe superar los 12. Esta tabla describe expectativas, no resultados ejecutados. La comprobación de interfaz y permisos se realiza además con el usuario de la demo. La compilación y ejecución en sandbox están pendientes de registrar.
 
 Fuentes técnicas: [WorkDate](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/system/system-workdate-method), [Date y 0D](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/date/date-data-type), [extensión de Customer](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-extension-example). Las reglas comerciales anteriores son decisiones del ejercicio.
+

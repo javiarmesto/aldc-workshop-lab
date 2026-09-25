@@ -25,3 +25,4 @@ Requisito: programar revisiones de clientes y marcar una revisión realizada. Le
 4. Registrar versión de spec, responsable humano y aprobación o corrección necesaria.
 
 Las respuestas de negocio están fijadas en el contrato de formación. Si se propone variarlas, registrar el cambio de alcance y revisar tests antes de implementarlo.
+

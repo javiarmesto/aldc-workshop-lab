@@ -100,3 +100,6 @@ git rev-parse HEAD
 ```
 
 El SHA identifica tu especificación aprobada. Publicar checkpoints reutilizables es tarea del instructor; no bloquea tu paso al Lab 05.
+
+
+Si necesitas una etapa preparada para continuar, utiliza [checkpoint/spec-aprobada](../../docs/checkpoints.md) en otra carpeta y registra su procedencia.

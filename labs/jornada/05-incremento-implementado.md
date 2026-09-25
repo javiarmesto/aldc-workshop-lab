@@ -118,3 +118,4 @@ git rev-parse HEAD
 ```
 
 Conserva ambos SHA para el Lab 06. No cierres la aceptación hasta confirmar los 12 tests.
+

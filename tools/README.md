@@ -48,4 +48,5 @@ Parámetros compartidos: `-ProjectRoot`, `-PluginPath`, `-BCQualityPath`, `-Plan
 
 Las herramientas visibles en PowerShell no demuestran acceso desde un agente. Guarda los cambios de herramientas y comprueba su uso en una sesión nueva. GitHub es una alternativa para leer commits publicados; un diff manual también sirve.
 
-Validación inicial: revisión estática; pendiente de ejecución de estos helpers en Windows/PowerShell durante el ensayo. No ejecutan apm audit: muestran su ayuda para revisar compatibilidad antes de instalar.
+Validación ejecutada el 25/09/2026: Windows PowerShell **5.1.26100.33438** y PowerShell **7.6.6**, ambos correctos en [GitHub Actions](https://github.com/javiarmesto/aldc-workshop-lab/actions/runs/36170207864), commit `80ffbe2e04e99c2ebfc4e7f4feacfc8212096a59`. La prueba `tools/tests/Test-WorkshopHelpers.ps1` usa carpetas temporales con espacios/acentos; verifica preparación idempotente, rechazo de sobrescritura, restauración, prerrequisitos ausentes, consumidor existente y hashes sin cambios tras los helpers. APM está simulado para comprobar que solo se solicitan version/help: esta prueba no instala APM, no ejecuta audit real, no inicia VS Code ni valida AL/BC. El ensayo real de APM está descrito en Lab 07.
+

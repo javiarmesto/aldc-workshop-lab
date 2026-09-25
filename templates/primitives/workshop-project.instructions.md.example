@@ -8,3 +8,4 @@ description: Convenciones del taller Customer Follow-up
 Antes de cambiar Customer Follow-up, lee contract.es.md (o contract.md). Mantén fechas de tipo Date y la fecha de referencia explícita en la función de estado. La interfaz aporta WorkDate de la sesión. Sigue el contrato para fecha vacía y reprogramación. Conserva IDs, firmas y ayudantes suministrados. Consulta símbolos si necesitas objetos estándar. Diferencia revisión, compilación, ejecución y pendientes al entregar.
 
 No modifiques `.github/copilot-instructions.md`: pertenece a ALDC.
+

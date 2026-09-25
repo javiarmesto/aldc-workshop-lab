@@ -7,3 +7,9 @@ apm-consumer/
 apm_modules/
 .DS_Store
 Thumbs.db
+
+
+# Local AL editor state and execution output
+.vscode/rad.json
+.coverage/
+.github/plans/telemetry/

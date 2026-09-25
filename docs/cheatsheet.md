@@ -38,3 +38,4 @@ Contrato y revisión utilizados, commit o diff, versión y entorno, operación e
 APM distribuye las primitivas que soporta el destino elegido. El manifiesto declara la dependencia y el lockfile generado fija su resolución. Usa `--target copilot` o `--target claude` en la ficha de instalación. [Lab 07](../labs/jornada/07-contexto-como-dependencia.md).
 
 BCQuality informa decisiones del arquitecto y criterios del Spec Agent que se retoman en revisión. Comprueba lectura, selección, aplicación y estado de ejecución por separado. Conserva aparte la evidencia de compilación y tests. [Lab 06](../labs/jornada/06-revision-citada.md).
+

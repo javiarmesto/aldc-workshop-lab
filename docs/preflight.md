@@ -1,5 +1,7 @@
 # Antes de la jornada
 
+Si usas VS Code Insiders, sustituye `code` por `code-insiders` en los comandos de esta guía y utiliza siempre el mismo editor/perfil. APM 0.23.1 es la versión del ensayo Copilot; registra tu versión y comprueba su ayuda antes de los comandos del Lab 07.
+
 La instalación se hace **antes** del taller. Si un paso falla, anota la operación, la versión y el mensaje: no lo des por resuelto.
 
 ## Qué necesitas
@@ -85,3 +87,4 @@ C12 crea un cliente sintético y contiene su borrado al final; un fallo puede im
 2. Consulta un símbolo real de Customer y una página de Microsoft Learn.
 3. Sigue [Ejecutar los tests](#ejecutar-los-tests) en tu sandbox: con el starter sin tocar deben fallar **exactamente C02, C03, C04, C11 y C12**.
 4. Abre **Agent Debug Logs** desde el chat.
+

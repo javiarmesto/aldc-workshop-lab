@@ -28,3 +28,4 @@ The starter supplies the fields, enum, card extension, permission set, date-vali
 cases.csv defines C01–C12. Expected starter failures: C02, C03, C04, C11 and C12. The reference should pass all 12. These are acceptance expectations, not observed runtime results. Browser behavior and user permissions also need manual checks. Compilation and sandbox execution must be recorded during rehearsal.
 
 Technical references: [WorkDate](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/system/system-workdate-method), [AL Date](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/date/date-data-type). Business rules above are workshop design decisions.
+
