@@ -1,0 +1,7 @@
+name: october-workshop-example
+version: "1.0"
+enforcement: block
+manifest:
+  required_fields:
+    - description
+  scripts: deny

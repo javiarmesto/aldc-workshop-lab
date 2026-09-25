@@ -1,0 +1,6 @@
+{
+  "chat.plugins.enabled": true,
+  "chat.pluginLocations": {
+    "/RUTA/ABSOLUTA/review-dates-lab": true
+  }
+}

@@ -1,0 +1,9 @@
+.alpackages/
+.alcache/
+*.app
+*.g.xlf
+.vscode/launch.json
+apm-consumer/
+apm_modules/
+.DS_Store
+Thumbs.db

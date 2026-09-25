@@ -1,0 +1,4 @@
+---
+description: Revisar el estado y las fechas de seguimiento del cliente.
+---
+Revisa contract.md y el diff con review-date-rules. Comprueba fechas límite, reprogramación y repetición de la acción. Devuelve discrepancias y evidencia. No realices ediciones ni declares ejecutadas pruebas que solo has leído.

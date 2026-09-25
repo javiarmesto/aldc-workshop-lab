@@ -1,0 +1,12 @@
+{
+  "folders": [
+    { "name": "Customer Follow-up (ALDC root)", "path": "." },
+    { "name": "App", "path": "App" },
+    { "name": "Test", "path": "Test" },
+    { "name": "BCQuality (clone in ../bcquality)", "path": "../bcquality" }
+  ],
+  "settings": {
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": ["${CodeCop}", "${UICop}", "${PerTenantExtensionCop}"]
+  }
+}

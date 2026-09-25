@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "My sandbox",
+      "type": "al",
+      "request": "launch",
+      "environmentType": "Sandbox",
+      "environmentName": "REPLACE_WITH_SANDBOX_NAME",
+      "tenant": "REPLACE_WITH_TENANT_ID",
+      "startupObjectId": 22,
+      "startupObjectType": "Page",
+      "schemaUpdateMode": "ForceSync",
+      "breakOnError": "All",
+      "launchBrowser": true
+    }
+  ]
+}
