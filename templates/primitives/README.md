@@ -4,8 +4,10 @@ Copia estos ejemplos a un workspace de práctica, quita el sufijo `.example` y c
 
 | Archivo | Destino en la práctica |
 |---|---|
-| copilot-instructions.md.example | .github/copilot-instructions.md |
+| workshop-project.instructions.md.example | .github/instructions/workshop-project.instructions.md |
 | review-followup.prompt.md.example | .github/prompts/review-followup.prompt.md |
 | followup-reviewer.agent.md.example | .github/agents/followup-reviewer.agent.md |
+
+`.github/copilot-instructions.md` lo instala ALDC. No lo sustituyas: las convenciones del taller van en `.github/instructions/` con su propio `applyTo`.
 
 Coloca también el contrato del laboratorio como `contract.md` en la raíz del workspace. Verifica las herramientas propuestas con el selector del editor. La plantilla de skill está en el ejemplo de plugin; durante el bloque de primitivas puede copiarse a `.github/skills/review-date-rules/SKILL.md` junto con sus recursos y después empaquetarse.

@@ -21,7 +21,7 @@
 
 1. Observad el plan y las delegaciones.
 2. Completad la persistencia y revisad el alcance del diff: no deben cambiar firmas, IDs, tests ni ayudantes.
-3. Compilad y ejecutad C01–C12 sobre el código actual. Registrad código comprobado, operación, resultado y pendientes.
+3. Compilad y ejecutad C01–C12 sobre el código actual siguiendo [cómo ejecutar los tests](../../docs/preflight.md#ejecutar-los-tests). **Objetivo: 12 de 12.** Registrad código comprobado, operación, resultado y pendientes.
 
 ## Después de comer · revisión y corrección
 

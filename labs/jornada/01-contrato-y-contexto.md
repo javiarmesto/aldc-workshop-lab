@@ -7,7 +7,7 @@
 ## Preparar las primitivas
 
 1. Crea `.github/instructions`, `.github/prompts`, `.github/agents` y `.github/skills` en la raíz del repositorio.
-2. Copia las [plantillas de primitivas](../../templates/primitives/README.md) a su destino y quita `.example`.
+2. Copia las [plantillas de primitivas](../../templates/primitives/README.md) a su destino y quita `.example`. **No sobrescribas `.github/copilot-instructions.md`**: lo ha instalado ALDC en el preflight. Las convenciones del taller van en `.github/instructions/workshop-project.instructions.md`.
 3. Copia `packages/october-workshop-primitives/.apm/instructions/workshop-al.instructions.md` a `.github/instructions/`. Fíjate en `applyTo: "**/*.al"`.
 4. Copia `templates/plugin/skills/review-date-rules` a `.github/skills/review-date-rules`, renombra `SKILL.md.example` y conserva `boundary-cases.md`.
 5. Abre una sesión nueva de chat y localiza el revisor y sus herramientas efectivas.
@@ -20,7 +20,10 @@
 
 1. Revisad el contrato y las instrucciones aplicables.
 2. Completad la función y revisad el diff. `MarkReviewed` se queda pendiente.
-3. Compilad y ejecutad C01–C06; guardad el resultado en `evidence/lab01-run-note.md` con la [ficha de ejecución](../../templates/evidence/run-note.md).
+3. Compilad y ejecutad C01–C06 siguiendo [cómo ejecutar los tests](../../docs/preflight.md#ejecutar-los-tests); guardad el resultado en `evidence/lab01-run-note.md` con la [ficha de ejecución](../../templates/evidence/run-note.md).
+
+4. Ejecutad después C01–C12 para comprobar el estado completo: deben pasar C01–C10 y fallar solo C11 y C12. Registrad el resultado observado; ejecutar únicamente C01–C06 no demuestra el estado de los otros seis casos.
+5. Comprobad que el diff del lab no modifica `.github/copilot-instructions.md` y que existen `workshop-al.instructions.md` y `workshop-project.instructions.md` en `.github/instructions/`. En una sesión nueva, inspeccionad las instrucciones usadas en una tarea AL; distinguid archivos presentes de contexto realmente aplicado.
 
 ## Resultado esperado
 
