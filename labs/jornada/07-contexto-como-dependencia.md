@@ -17,7 +17,7 @@ Lee sus resultados antes de continuar. No instala ni modifica el entorno; distin
 Haz esta parte en PowerShell. Sustituye la ruta por la de **tu copia** si tiene otro nombre. Conserva la variable `$lab` en esta terminal para volver después al repositorio principal.
 
 ```powershell
-$lab = 'C:\Workshops\aldc-workshop-rehearsal'
+$lab = 'C:\Workshops\mi-workshop'
 Set-Location -LiteralPath $lab
 if (Test-Path '.\apm-consumer') {
     throw 'apm-consumer ya existe; revisa su contenido antes de continuar.'
@@ -44,7 +44,7 @@ Si PowerShell presenta una salida nativa como `NativeCommandError`, conserva el 
 
 ### Abrir la ventana correcta
 
-Sigues en `C:\Workshops\aldc-workshop-rehearsal\apm-consumer`. Abre **solo esa carpeta**, en una ventana nueva:
+Sigues en `C:\Workshops\mi-workshop\apm-consumer`. Abre **solo esa carpeta**, en una ventana nueva:
 
 ```powershell
 code-insiders -n .
@@ -89,7 +89,7 @@ Guarda el texto en evidence/ del repositorio principal, no dentro del consumidor
 
 ```powershell
 # Vuelve a la terminal del repositorio principal; adapta esta ruta:
-Set-Location -LiteralPath 'C:\Workshops\aldc-workshop-rehearsal'
+Set-Location -LiteralPath 'C:\Workshops\mi-workshop'
 git add -- evidence/lab07-apm.md
 git diff --cached
 git commit -m "docs: registrar dependencia de contexto del Lab 07"
