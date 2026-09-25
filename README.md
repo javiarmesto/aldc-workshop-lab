@@ -1,5 +1,7 @@
 # ALDC Workshop Lab · Customer Follow-up
 
+**¿Primera vez? [Empieza aquí](docs/start-here.md): crea tu copia, prepara el entorno y abre el primer lab.**
+
 Repositorio de prácticas de los talleres de **Roberto Corella y Javier Armesto** sobre desarrollo AL con agentes y ALDC. Es una plantilla: cada participante crea su propia copia y trabaja en ella durante el taller y después.
 
 - **Jornada completa (castellano, GitHub Copilot Chat):** *De asistentes de IA a ingeniería de agentes.* [Guía de los laboratorios](labs/README.md).
@@ -30,7 +32,7 @@ git -C bcquality checkout --detach 07e324ddbc42597c479e041e06a7833740e05d0f
 | `docs/` | Preparación previa, hoja de referencia y agenda. |
 | `evidence/` | Dónde guardar tu arquitectura, spec, resultados y decisiones. |
 
-La solución de referencia **no** está en este repositorio; se publicará después del taller.
+La rama main contiene el starter; las ramas checkpoint solo ofrecen etapas de recuperación. La solución de referencia completa no se distribuye aquí durante el taller.
 
 ## Datos técnicos
 
@@ -41,7 +43,7 @@ La solución de referencia **no** está en este repositorio; se publicará despu
 
 ## Estado
 
-Repositorio privado hasta el taller. La licencia se publicará antes de abrirlo.
+Material preparado para el taller. Acceso y licencia los anuncian los organizadores; consulta LICENSE cuando se publique. [Ayuda para participantes](docs/help.md).
 
 **Roberto Corella y Javier Armesto**
 

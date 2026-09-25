@@ -1,5 +1,7 @@
 # ALDC Workshop Lab · Customer Follow-up
 
+**First visit? [Start here](docs/start-here.en.md): create your copy, prepare your environment and open the first lab.**
+
 Practice repository for the workshops by **Roberto Corella and Javier Armesto** on agentic AL development with ALDC. It is a template: each participant creates their own copy and works in it during and after the session.
 
 **Directions EMEA · Spec-Driven AL Development: A Hands-On Lab on Multi-Agent Workflows for Business Central.** 105 minutes, 72 of them hands-on. Tracks: GitHub Copilot Chat or Claude Code.
@@ -28,7 +30,7 @@ git -C bcquality checkout --detach 07e324ddbc42597c479e041e06a7833740e05d0f
 | `templates/evidence` | Evidence cards for design, checkpoints and runs. |
 | `evidence/` | Where you keep architecture, specification, results and decisions. |
 
-Object ranges: App 71200–71249, Test 71300–71349. BC 28.0+ (tested on BC online 29), runtime 16.0. With the untouched starter, exactly C02, C03, C04, C11 and C12 fail; your goal is 12 of 12. The reference solution is published after the workshop.
+Object ranges: App 71200–71249, Test 71300–71349. BC 28.0+ (tested on BC online 29), runtime 16.0. With the untouched starter, exactly C02, C03, C04, C11 and C12 fail; your goal is 12 of 12. The default branch contains the starter; checkpoint branches provide partial recovery stages. The full reference solution is not distributed here during the workshop.
 
 
 Stage recovery and commit instructions (Spanish): [checkpoints](docs/checkpoints.md).
