@@ -2,6 +2,16 @@
 
 **Objetivo:** seguir un criterio desde su fuente hasta una decisión sobre el cambio. **Tiempo:** 16 minutos. **Punto de partida:** especificación y criterios, commits base/final del Lab 05 y resultados. **Entrega:** fuente, aplicabilidad, evidencia, resultado y decisión en `evidence/lab06-bcquality.md`.
 
+## Comprobar prerrequisitos
+
+Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test-Lab06.ps1):
+
+```powershell
+./tools/Test-Lab06.ps1
+```
+
+Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+
 ## Preparar la revisión
 
 Abre un chat nuevo con **AL Developer Reviewer**. Comprueba acceso de lectura al proyecto y BCQuality. Para el diff puede usar Git local o herramientas GitHub equivalentes. Guarda la configuración de herramientas antes de abrir la sesión. Su contrato puede impedir escribir informes: devolverlos en el chat es suficiente.

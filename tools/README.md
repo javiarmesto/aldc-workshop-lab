@@ -20,3 +20,32 @@ Antes de retirar componentes, guarda el estado del Lab 01 en Git. El script del 
 La restauración conserva la carpeta de reserva vacía. Para otro ensayo, elige un nuevo `-BackupPath` o revisa y retira manualmente la carpeta vacía.
 
 Si PowerShell bloquea la ejecución por una política de tu equipo, sigue la alternativa manual de la guía o consulta con tu administrador. No es necesario cambiar la política para comprender o realizar el laboratorio.
+
+## Helpers de comprobación
+
+Ejecuta `./tools/Test-Lab01.ps1` hasta `./tools/Test-Lab08.ps1` antes del lab correspondiente. Comparten `Test-LabPrerequisites.ps1`, compatible por diseño con PowerShell 5.1. No instalan dependencias, publican apps, ejecutan tests ni modifican archivos. Git se consulta en lectura; APM solo con version/help.
+
+| Lab | Comprobaciones específicas |
+|---|---|
+| 01 | Plantillas, script de preparación y configuración ALDC |
+| 02 | Plantilla de plugin y existencia de copia previa |
+| 03 | Skill externa y evidencia del Lab 02 |
+| 04 | Configuración, corpus BCQuality y carpeta de símbolos |
+| 05 | Documentos de diseño, criterios y presencia de launch.json |
+| 06 | Criterios, evidencia, corpus y diff opcional |
+| 07 | APM/version/ayuda, manifiesto y consumidor previo |
+| 08 | Evidencias, especificación y recorrido de aceptación |
+
+Estados: **PRESENTE/DISPONIBLE** solo confirma presencia; **FALTA/REVISAR** requiere revisar; **MANUAL** necesita comprobación por el participante o desde el agente. La ausencia del plugin antes de prepararlo en Lab 02 es normal. El helper no determina un aprobado global ni verifica la semántica de aprobaciones o resultados.
+
+Parámetros compartidos: `-ProjectRoot`, `-PluginPath`, `-BCQualityPath`, `-PlansPath`. Los valores predeterminados son raíz del repo, carpetas hermanas review-dates-lab/bcquality y .github/plans. Si aldc.yaml usa otras rutas, pásalas explícitamente; no se analiza YAML por aproximación. No se imprime launch.json ni configuración de credenciales.
+
+```powershell
+./tools/Test-Lab06.ps1 -BaseCommit '<SHA-base>' -IncrementCommit '<SHA-lab05>'
+./tools/Test-Lab04.ps1 -BCQualityPath 'D:\equipo\bcquality'
+./tools/Test-Lab07.ps1
+```
+
+Las herramientas visibles en PowerShell no demuestran acceso desde un agente. Guarda los cambios de herramientas y comprueba su uso en una sesión nueva. GitHub es una alternativa para leer commits publicados; un diff manual también sirve.
+
+Validación inicial: revisión estática; pendiente de ejecución de estos helpers en Windows/PowerShell durante el ensayo. No ejecutan apm audit: muestran su ayuda para revisar compatibilidad antes de instalar.

@@ -2,6 +2,16 @@
 
 **Objetivo:** mejorar una revisión a partir de una señal real y comparar el resultado. **Tiempo:** 13 minutos. **Punto de partida:** plugin del Lab 02, respuesta de revisión y registros disponibles. **Entrega:** `evidence/lab03-before-after.md` con una única modificación y sus efectos observados.
 
+## Comprobar prerrequisitos
+
+Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test-Lab03.ps1):
+
+```powershell
+./tools/Test-Lab03.ps1
+```
+
+Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+
 ## Qué vas a conseguir
 
 En el Lab 02 comprobaste que el plugin se carga y se utiliza. Ahora vas a revisar cómo interpreta el contexto, cambiar una instrucción concreta y repetir la misma tarea. El objetivo es aprender a justificar una mejora con evidencia.

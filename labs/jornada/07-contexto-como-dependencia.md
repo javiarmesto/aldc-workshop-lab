@@ -2,6 +2,16 @@
 
 **Objetivo:** instalar y utilizar una skill desde un paquete del equipo. **Tiempo:** 18 minutos. **Punto de partida:** paquete local [`packages/october-workshop-primitives`](../../packages/october-workshop-primitives/README.md) y APM instalado (`apm --version`). **Entrega:** manifiesto, lockfile, archivos proyectados e invocación.
 
+## Comprobar prerrequisitos
+
+Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test-Lab07.ps1):
+
+```powershell
+./tools/Test-Lab07.ps1
+```
+
+Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+
 ## Pasos
 
 Desde la raíz de tu repositorio:

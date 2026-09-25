@@ -4,6 +4,16 @@
 
 **Punto de partida:** starter, [contrato](../../contract.es.md) y skill de fechas de [`templates`](../../templates/README.md). **Entrega:** diff acotado y tabla de C01–C06 observados.
 
+## Comprobar prerrequisitos
+
+Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test-Lab01.ps1):
+
+```powershell
+./tools/Test-Lab01.ps1
+```
+
+Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+
 ## Preparar las primitivas
 
 Desde la raíz de tu copia, ejecuta el [script de preparación](../../tools/Prepare-Lab01.ps1):

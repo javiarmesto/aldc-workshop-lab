@@ -2,6 +2,16 @@
 
 **Objetivo:** montar, registrar y usar un plugin local a partir de un ejemplo suministrado, para reutilizar la revisión de fechas en una sesión nueva. **Tiempo:** 18 minutos. **Punto de partida:** [`templates/plugin`](../../templates/plugin/README.md) y la función de estado del Lab 01. **Entrega:** ruta del plugin, componente usado y resultado de revisión.
 
+## Comprobar prerrequisitos
+
+Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test-Lab02.ps1):
+
+```powershell
+./tools/Test-Lab02.ps1
+```
+
+Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+
 ## Qué viene preparado y qué haces tú
 
 El contenido del plugin ya está escrito en `templates/plugin`: manifiesto, skill de revisión de fechas, recursos, agente, comando y configuración MCP. Los archivos que deben activarse llevan el sufijo `.example`.

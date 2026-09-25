@@ -2,6 +2,16 @@
 
 **Objetivo:** conseguir que otra pareja pueda entender y comprobar el incremento. **Tiempo:** 10 minutos de revisión entre parejas + 7 de diseño de vuestro flujo. **Punto de partida:** spec aprobada, cambio, resultados y recorrido funcional. **Entrega:** aceptación independiente o una devolución concreta.
 
+## Comprobar prerrequisitos
+
+Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test-Lab08.ps1):
+
+```powershell
+./tools/Test-Lab08.ps1
+```
+
+Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+
 ## El paquete de entrega
 
 | Pieza | Debe permitir |

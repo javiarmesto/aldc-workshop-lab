@@ -2,6 +2,16 @@
 
 **Objetivo:** obtener una especificación que otra persona pueda revisar. **Tiempo:** 20 minutos + 6 de revisión cruzada. **Punto de partida:** contrato, starter, ALDC y BCQuality montado. **Entrega:** arquitectura, spec, criterios citados y decisiones pendientes visibles.
 
+## Comprobar prerrequisitos
+
+Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test-Lab04.ps1):
+
+```powershell
+./tools/Test-Lab04.ps1
+```
+
+Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+
 ## De dónde vienes y qué cambia ahora
 
 En el Lab 03 mejoraste una instrucción del plugin y observaste su efecto. Ahora vas a convertir un requisito en una arquitectura y una especificación revisables. Al terminar este lab habrás completado cuatro de los ocho laboratorios.

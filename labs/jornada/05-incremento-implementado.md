@@ -2,6 +2,16 @@
 
 **Objetivo:** completar el comportamiento y comprobarlo con C01–C12. **Tiempo:** 27 minutos. **Punto de partida:** arquitectura y spec aprobadas; starter con el trabajo del Lab 01. **Entrega:** diff acotado, compilación, resultados y revisión inicial.
 
+## Comprobar prerrequisitos
+
+Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test-Lab05.ps1):
+
+```powershell
+./tools/Test-Lab05.ps1
+```
+
+Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+
 ## Preparar el chat
 
 Selecciona Conductor y utiliza los [prompts de planificación, aprobación y cierre](#prompts-para-planificar-aprobar-y-cerrar) de esta guía. Primero revisa el plan; después autoriza la implementación.
