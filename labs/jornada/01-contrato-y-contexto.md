@@ -6,6 +6,14 @@
 
 ## Preparar las primitivas
 
+Desde la raíz de tu copia, ejecuta el [script de preparación](../../tools/Prepare-Lab01.ps1):
+
+```powershell
+./tools/Prepare-Lab01.ps1
+```
+
+Automatiza las copias de los pasos 1–4 y conserva las instrucciones de ALDC. Si ya preparaste las primitivas, no necesitas repetirlo. Revisa qué hace cada paso a continuación; puedes realizar las mismas operaciones manualmente. [Ayuda de los scripts](../../tools/README.md).
+
 1. Crea `.github/instructions`, `.github/prompts`, `.github/agents` y `.github/skills` en la raíz del repositorio.
 2. Copia las [plantillas de primitivas](../../templates/primitives/README.md) a su destino y quita `.example`. **No sobrescribas `.github/copilot-instructions.md`**: lo ha instalado ALDC en el preflight. Las convenciones del taller van en `.github/instructions/workshop-project.instructions.md`.
 3. Copia `packages/october-workshop-primitives/.apm/instructions/workshop-al.instructions.md` a `.github/instructions/`. Fíjate en `applyTo: "**/*.al"`.

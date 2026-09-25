@@ -23,7 +23,15 @@ La skill retoma la revisión utilizada en el Lab 01. Ahora se prueba su distribu
 
 ## 1. Preparar el paquete local
 
-Puedes copiar y renombrar manualmente o usar este bloque equivalente de **PowerShell**, desde la raíz de tu copia del laboratorio:
+Desde la raíz de tu copia, puedes ejecutar el [script incluido](../../tools/Prepare-Lab02.ps1):
+
+```powershell
+./tools/Prepare-Lab02.ps1 -Action Prepare
+```
+
+Crea la carpeta hermana `review-dates-lab` y renombra las plantillas. Si ya preparaste esa carpeta, no repitas el paso. Puedes revisar los parámetros y las protecciones en [Scripts para participantes](../../tools/README.md).
+
+Para entender las operaciones o hacerlas manualmente, este es el bloque equivalente de **PowerShell**:
 
 ```powershell
 $lab = (Get-Location).Path
@@ -47,7 +55,18 @@ Por ejemplo, si tu copia está en `C:\Workshops\aldc-workshop-rehearsal`, el paq
 
 ## 2. Registrar en VS Code
 
-Abre **Preferences: Open User Settings (JSON)**. Incorpora estas propiedades, adaptando la ruta a la carpeta creada:
+**Ruta principal · Personalización del chat**
+
+1. Abre la personalización del chat y entra en **Plugins**.
+2. Pulsa **Install from Source**.
+3. Introduce la ruta de la carpeta que contiene `plugin.json`, por ejemplo `C:\Workshops\review-dates-lab`, y confirma con Enter.
+4. Comprueba que aparece **review-dates-lab** y que está habilitado. Localiza también la skill **review-date-rules** y el agente **Follow-up Reviewer**.
+
+Selecciona la carpeta exacta del paquete, no la carpeta padre `C:\Workshops`. Si la interfaz muestra una ruta abreviada, comprueba la fuente instalada. No registres de nuevo el mismo plugin mediante otro método si ya aparece.
+
+**Alternativa · Ajustes JSON**
+
+Si tu versión no ofrece esa entrada, abre **Preferences: Open User Settings (JSON)**. Incorpora estas propiedades, adaptando la ruta a la carpeta creada:
 
 ```json
 "chat.plugins.enabled": true,
@@ -60,13 +79,25 @@ Si ya tienes `chat.pluginLocations`, añade una entrada a ese mismo objeto: cons
 
 ## 3. Evitar duplicados y abrir una sesión nueva
 
-Guarda el trabajo del Lab 01 en un commit. Mueve temporalmente **fuera del workspace** las copias de sus componentes que ahora suministra el plugin:
+Guarda el trabajo del Lab 01 en un commit. Ejecuta el script desde la raíz:
+
+```powershell
+./tools/Prepare-Lab02.ps1 -Action DisableLocal
+```
+
+Este paso mueve temporalmente **fuera del workspace**, a la carpeta hermana `lab01-primitivas-reserva`, las copias de los componentes que ahora suministra el plugin:
 
 - `.github/skills/review-date-rules/`
 - `.github/agents/followup-reviewer.agent.md`
 - `.github/prompts/review-followup.prompt.md`
 
-Conserva esa copia de reserva para restaurarla si necesitas volver al Lab 01. Git mostrará las rutas retiradas como eliminaciones locales: son parte de la prueba de cambiar el origen de los componentes, no una pérdida del checkpoint.
+Conserva esa copia de reserva. Si ya moviste los componentes manualmente, no repitas el paso. Para volver a las primitivas locales, desactiva primero el plugin en Personalización y ejecuta:
+
+```powershell
+./tools/Prepare-Lab02.ps1 -Action RestoreLocal
+```
+
+También puedes mover esas tres rutas manualmente siguiendo la tabla del [README de scripts](../../tools/README.md). Git mostrará las rutas retiradas como eliminaciones locales: son parte de la prueba de cambiar el origen de los componentes, no una pérdida del checkpoint.
 
 **Mantén activas las instrucciones de `.github/instructions/` y `.github/copilot-instructions.md`, así como el resto de ALDC.** Recarga la ventana y abre una sesión nueva. Localiza la skill, el agente y las herramientas procedentes del plugin. La presencia de una ruta en los ajustes no demuestra que se haya cargado.
 
