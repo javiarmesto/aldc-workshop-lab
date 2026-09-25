@@ -38,6 +38,14 @@ external:
 8. Revisa `git status` y el diff antes del commit `preparado para la jornada`: no incluyas `launch.json`, paquetes compilados, cachés ni credenciales.
 
 
+## Qué queda preparado para los laboratorios
+
+Al terminar este preflight, ALDC ya está instalado y su toolkit aporta agentes, instrucciones y skills al proyecto. No se instala por primera vez en el Lab 04.
+
+Las primitivas del ejercicio son otro conjunto: la skill `review-date-rules`, el agente `followup-reviewer` y el prompt de revisión. En el Lab 01 las copias al proyecto; en el Lab 02 las empaquetas en un plugin y retiras únicamente esas copias locales; en el Lab 03 mejoras la skill del plugin. Conserva los archivos de ALDC.
+
+Los primeros labs se realizan con ALDC presente: sus instrucciones y otras skills pueden influir en las respuestas. Registra las que se utilicen; no interpretes el Lab 03 como un experimento aislado. En el Lab 04 empezarás a utilizar explícitamente el flujo Architect → aprobación humana → Spec Agent.
+
 ## Ejecutar los tests
 
 Los 12 tests están en la codeunit **71300 "OW Follow-up Tests"** de **Test**. No dependen de Library Assert.
