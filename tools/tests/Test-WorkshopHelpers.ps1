@@ -70,9 +70,9 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'fixture commit failed' }
     $sha = & git -C $project rev-parse HEAD
     # APM is stubbed: these helpers must only request version and command help.
-    $script:apmCalls = @()
+    $global:workshopHelperApmCalls = New-Object 'System.Collections.Generic.List[string]'
     function global:apm {
-        $script:apmCalls += ($args -join ' ')
+        $global:workshopHelperApmCalls.Add(($args -join ' '))
         if (($args -join ' ') -notin @('--version','install --help','audit --help')) { throw 'Unexpected APM mutation' }
         $global:LASTEXITCODE = 0
         Write-Output 'APM fixture: version/help only'
@@ -89,9 +89,10 @@ try {
     $report = (& (Join-Path $project 'tools/Test-Lab07.ps1') -ProjectRoot $project *>&1 | Out-String)
     Assert ($report -match 'apm-consumer ya existe') 'Existing consumer reported without overwrite'
     Assert ((Snapshot $tempRoot) -eq $beforeChecks) 'All prerequisite helpers leave file contents unchanged'
-    Assert ($script:apmCalls.Count -eq 6) 'APM only received the six expected read-only requests'
+    Assert ($global:workshopHelperApmCalls.Count -eq 6) 'APM only received the six expected read-only requests'
     Write-Host "SUCCESS: helpers validated on $($PSVersionTable.PSVersion), Windows=$env:OS"
 } finally {
     Remove-Item Function:\apm -ErrorAction SilentlyContinue
+    Remove-Variable workshopHelperApmCalls -Scope Global -ErrorAction SilentlyContinue
     if (Test-Path $tempRoot) { Remove-Item -LiteralPath $tempRoot -Recurse -Force }
 }

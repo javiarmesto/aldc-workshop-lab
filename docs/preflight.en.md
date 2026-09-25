@@ -1,5 +1,7 @@
 # Before the Directions EMEA lab
 
+For VS Code Insiders, replace `code` with `code-insiders` throughout this guide and keep the same editor/profile. Copilot APM rehearsal used 0.23.1; record your own version and check command help before Lab 4.
+
 Bring VS Code with **GitHub Copilot Chat** or **Claude Code**. This edition uses **ALDC 5**. Complete installation, initialization, symbols, BCQuality mounting and a baseline compile/test before the 105 minutes begin.
 
 ## Your copy
@@ -105,3 +107,4 @@ C12 creates a synthetic customer and deletes it at the end; failure can prevent 
 ## Tools
 
 Confirm a real Customer symbol result, a Microsoft Learn result and a control test. A tool listed in the catalog is not proof it ran. Copilot plans default to `.github/plans`, Claude to `.claude/plans`; `aldc.yaml → plans.root` is authoritative.
+

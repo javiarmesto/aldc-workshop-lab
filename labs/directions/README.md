@@ -69,16 +69,37 @@ Stop this block at 01:24 and preserve unfinished work so the final 21 minutes re
 
 **01:30–01:38, 8 minutes.** APM must already be installed.
 
-From the root of your repository:
+From the root of your repository, in PowerShell. Set `$target` to `claude` for that track, otherwise keep `copilot`:
 
-```sh
-mkdir apm-consumer
-cd apm-consumer
-apm install ../packages/october-workshop-primitives --target copilot
-apm install --frozen --target copilot
+```powershell
+$target = 'copilot'
+$workshopRoot = (Get-Location).Path
+if (Test-Path './apm-consumer') { throw 'Consumer already exists; inspect it first.' }
+New-Item -ItemType Directory -Path './apm-consumer' | Out-Null
+Set-Location './apm-consumer'
+apm --version
+if ($LASTEXITCODE -ne 0) { throw 'APM is unavailable.' }
+apm install ../packages/october-workshop-primitives --target $target
+if ($LASTEXITCODE -ne 0) { throw 'Install failed; keep the diagnostic.' }
+apm install --frozen --target $target
+if ($LASTEXITCODE -ne 0) { throw 'Frozen install failed.' }
+apm audit
+if ($LASTEXITCODE -ne 0) { throw 'Audit needs review.' }
 ```
 
-For Claude use `--target claude` in both commands. Inspect manifest, generated lockfile, installed instruction and review-al-evidence skill. Open the consumer and confirm discovery. The supplied package is version **1.1.0** and includes the follow-up date conventions. [APM install](https://microsoft.github.io/apm/reference/cli/install/).
+Inspect the generated manifest, lockfile and deployed instruction/skill. The package is **1.1.0**. Copilot was rehearsed with APM **0.23.1**: install, frozen and audit succeeded; audit reported no drift across three files. Frozen alone does not prove immutable local content. Record your actual version and output; this does not certify the Claude track.
+
+For Copilot, while still **inside apm-consumer**, run `code-insiders -n .` (or `code -n .` for stable VS Code). Confirm the new window contains `apm.yml` at its root. For Claude, start its session from this same consumer directory. Supply the review evidence explicitly: the AL app and specification are in the original workspace, not installed by APM.
+
+```text
+Read the installed review-al-evidence skill and identify its actual path.
+Review only this supplied evidence: <paste specification/diff/results>.
+Separate source inspection, reported results and your own executed checks.
+Identify missing information without inventing defects or test execution.
+Do not modify files or run tests. Return the review in chat.
+```
+
+In the original terminal, use `Set-Location -LiteralPath $workshopRoot` to return. A new terminal will not have this variable; use the full path of your repository instead. Save results in the main repository's `evidence/lab07-apm.md`, **outside the ignored consumer**. Record actual skill reading, not merely installation success. No `apm pack` step is required.
 
 ## Retrospective
 
@@ -91,3 +112,4 @@ Commit your work and the failed operation, ask the instructors for the next chec
 ## What you keep
 
 Your architecture/specification, reviewed increment, execution evidence, human decisions and APM consumer, all in your own repository. Keep evidence in [`evidence/`](../../evidence/README.md). See the [105-minute timeline](../../docs/agenda.md#directions-emea--105-minutes).
+

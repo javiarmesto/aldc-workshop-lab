@@ -7,14 +7,17 @@ on:
 permissions:
   contents: read
 jobs:
-  windows:
+  windows-powershell:
     runs-on: windows-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        shell: [powershell, pwsh]
     steps:
       - uses: actions/checkout@v4
-      - name: Validate preparation and read-only checks
-        shell: ${{ matrix.shell }}
+      - name: Validate helpers in Windows PowerShell 5.1
+        shell: powershell
+        run: ./tools/tests/Test-WorkshopHelpers.ps1
+  windows-pwsh:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate helpers in PowerShell 7
+        shell: pwsh
         run: ./tools/tests/Test-WorkshopHelpers.ps1

@@ -44,3 +44,6 @@ La solución de referencia **no** está en este repositorio; se publicará despu
 Repositorio privado hasta el taller. La licencia se publicará antes de abrirlo.
 
 **Roberto Corella y Javier Armesto**
+
+
+Recuperación de etapas y guardado de avances: [checkpoints](docs/checkpoints.md).
