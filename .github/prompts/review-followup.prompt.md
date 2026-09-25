@@ -1,6 +1,0 @@
----
-name: review-followup
-description: Contrastar el estado de revisión y su reprogramación con el contrato y casos límite.
-agent: ask
----
-Lee contract.md y el diff del workspace. Comprueba fecha vacía, anterior, igual y posterior, la fecha de referencia, los 30 días naturales y la repetición de la acción. Utiliza review-date-rules cuando esté disponible. Devuelve ubicación, caso, esperado, observado y corrección propuesta si corresponde. Identifica las comprobaciones no ejecutadas.

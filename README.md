@@ -1,4 +1,4 @@
-> **Checkpoint Lab 01:** continúa en Lab 02. GetReviewStatus está resuelto y MarkReviewed pendiente. Lee [procedencia y preparación](evidence/checkpoint-source.md). Las referencias al starter sin tocar que siguen describen main.
+> **Checkpoint spec aprobada:** continúa en Lab 05. GetReviewStatus resuelto, MarkReviewed pendiente y diseño aprobado recuperado del ensayo. Lee [procedencia y preparación](evidence/checkpoint-source.md). Las referencias siguientes al starter sin tocar describen main.
 
 # ALDC Workshop Lab · Customer Follow-up
 

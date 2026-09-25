@@ -1,0 +1,136 @@
+[
+  {
+    "object": "codeunit 71200 \"OW Customer Follow-up Mgt.\" -> MarkReviewed",
+    "path": "microsoft/knowledge/breaking-changes/do-not-change-published-procedure-signatures.md",
+    "layer": "microsoft",
+    "domain": "breaking-changes",
+    "check": "Signature (var Customer: Record Customer; ReviewDate: Date) is unchanged from the pre-existing stub"
+  },
+  {
+    "object": "codeunit 71200 \"OW Customer Follow-up Mgt.\" -> MarkReviewed",
+    "path": "microsoft/knowledge/breaking-changes/unreleased-symbol-change-is-not-a-breaking-change.md",
+    "layer": "microsoft",
+    "domain": "breaking-changes",
+    "check": "Confirms app.json 1.0.0.0/no dependents context does not relax the in-repo Test/page constraint above"
+  },
+  {
+    "object": "codeunit 71200 \"OW Customer Follow-up Mgt.\" -> MarkReviewed",
+    "path": "microsoft/knowledge/performance/understand-implicit-transaction-boundary.md",
+    "layer": "microsoft",
+    "domain": "performance",
+    "check": "No explicit Commit() added after Modify(true)"
+  },
+  {
+    "object": "permissionset 71200 \"OW FOLLOWUP\"",
+    "path": "microsoft/knowledge/security/inherent-permissions-minimal-grant.md",
+    "layer": "microsoft",
+    "domain": "security",
+    "check": "No [InherentPermissions]/[InherentEntitlements] added to MarkReviewed"
+  },
+  {
+    "object": "permissionset 71200 \"OW FOLLOWUP\"",
+    "path": "microsoft/knowledge/security/do-not-grant-rights-beyond-a-users-entitlement.md",
+    "layer": "microsoft",
+    "domain": "security",
+    "check": "Permission set still grants only codeunit execute; no TableData Customer grant added"
+  },
+  {
+    "object": "permissionset 71200 \"OW FOLLOWUP\"",
+    "path": "microsoft/knowledge/appsource/permission-sets-cover-setup-and-usage-without-super.md",
+    "layer": "microsoft",
+    "domain": "appsource",
+    "check": "Assignable permission set alone lets a non-SUPER user complete setup (none needed) and usage (the action) without TableData Customer, relying on the user's own role"
+  },
+  {
+    "object": "codeunit 71200 \"OW Customer Follow-up Mgt.\" (no events published)",
+    "path": "microsoft/knowledge/events/publish-thin-onbefore-onafter-integration-events.md",
+    "layer": "microsoft",
+    "domain": "events",
+    "check": "Confirms TD-04's rejected alternative was read, not silently ignored; no OnBeforeMarkReviewed/OnAfterMarkReviewed exists"
+  },
+  {
+    "object": "tableextension 71200 \"OW Customer Follow-up\"",
+    "path": "microsoft/knowledge/data-modeling/set-last-date-modified-in-onmodify-and-onrename.md",
+    "layer": "microsoft",
+    "domain": "data-modeling",
+    "check": "OW Last Review Date is confirmed still set only by MarkReviewed, not wired into OnModify/OnRename"
+  },
+  {
+    "object": "tableextension 71200 \"OW Customer Follow-up\", Customer (real record in C12)",
+    "path": "microsoft/knowledge/upgrade/unreleased-schema-change-needs-no-upgrade-path.md",
+    "layer": "microsoft",
+    "domain": "upgrade",
+    "check": "No upgrade codeunit added for the two already-shipped, unreleased fields"
+  },
+  {
+    "object": "Test/src/FollowUpTests.Codeunit.al (C11, Customer: Record Customer temporary)",
+    "path": "microsoft/knowledge/privacy/in-memory-data-not-a-privacy-concern.md",
+    "layer": "microsoft",
+    "domain": "privacy",
+    "check": "Confirms the temporary Customer buffer in C11 raises no privacy finding"
+  },
+  {
+    "object": "Test/src/FollowUpTests.Codeunit.al (C11 variable naming)",
+    "path": "microsoft/knowledge/style/temporary-variable-temp-prefix.md",
+    "layer": "microsoft",
+    "domain": "style",
+    "check": "Observational only (existing test file, not edited here): Customer in C11 is temporary but not Temp-prefixed"
+  },
+  {
+    "object": "Test/src/FollowUpTests.Codeunit.al (codeunit-level TestPermissions = Disabled)",
+    "path": "microsoft/knowledge/testing/permission-tests-must-lower-the-execution-context.md",
+    "layer": "microsoft",
+    "domain": "testing",
+    "check": "Observational only: confirms whether Disabled (SUPER context) versus Restrictive affects the AC-04 permission check's real coverage"
+  },
+  {
+    "object": "Test/src/FollowUpTests.Codeunit.al (C05-C07, asserterror + AssertErrorText)",
+    "path": "microsoft/knowledge/testing/asserterror-needs-expectederror-and-code.md",
+    "layer": "microsoft",
+    "domain": "testing",
+    "check": "Observational only: the custom AssertErrorText helper already pins the message text, partially covering this rule's intent without the Assert.ExpectedError API"
+  },
+  {
+    "object": "Test/src/FollowUpTests.Codeunit.al (C12, no [TransactionModel] declared)",
+    "path": "microsoft/knowledge/testing/transactionmodel-attribute-governs-test-transactions.md",
+    "layer": "microsoft",
+    "domain": "testing",
+    "check": "Confirms default AutoRollback is correct because neither MarkReviewed nor the test calls Commit() (TD-03)"
+  },
+  {
+    "object": "App/src/CustomerFollowUpMgt.Codeunit.al (DateRequiredErr, ClosingDateErr)",
+    "path": "microsoft/knowledge/style/labels-declared-at-object-scope.md",
+    "layer": "microsoft",
+    "domain": "style",
+    "check": "Confirms object-scope Label declarations remain valid (no forced move to procedure scope)"
+  },
+  {
+    "object": "App/src/CustomerFollowUpMgt.Codeunit.al (existing Error(DateRequiredErr) / Error(ClosingDateErr) calls)",
+    "path": "microsoft/knowledge/style/error-passes-parameters-directly-not-strsubstno.md",
+    "layer": "microsoft",
+    "domain": "style",
+    "check": "Confirms no StrSubstNo wrapping is introduced if MarkReviewed's body needs an error call (it does not add a new one)"
+  },
+  {
+    "object": "App/src/CustomerFollowUp.PageExt.al (\"OW Next Review Date\" field, editable)",
+    "path": "microsoft/knowledge/ui/show-caption-on-editable-fields.md",
+    "layer": "microsoft",
+    "domain": "ui",
+    "check": "Confirms ShowCaption stays default/true on the editable next-review-date field (no change proposed)"
+  },
+  {
+    "object": "App/src/CustomerFollowUp.PageExt.al (OWFollowUp group fields)",
+    "path": "microsoft/knowledge/ui/fasttab-field-importance.md",
+    "layer": "microsoft",
+    "domain": "ui",
+    "check": "Observational: current fields have no explicit Importance; not a required change for this spec's scope"
+  },
+  {
+    "object": "all App/Test object names in scope (<= 30 chars)",
+    "path": "microsoft/knowledge/style/object-name-30-char-limit.md",
+    "layer": "microsoft",
+    "domain": "style",
+    "check": "Confirms \"OW Customer Follow-up Mgt.\", \"OW Customer Follow-up Card\", \"OW Customer Follow-up\", \"OW Review Status\", \"OW FOLLOWUP\" all stay within the platform limit"
+  }
+]
+
