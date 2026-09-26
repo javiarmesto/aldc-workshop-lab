@@ -43,9 +43,13 @@ La solución de referencia **no** está en este repositorio; se publicará despu
 
 ## Estado
 
-Repositorio privado hasta el taller. La licencia se publicará antes de abrirlo.
+Repositorio privado hasta el taller. Licencias aplicadas: MIT para código y primitivas; CC BY 4.0 para material docente.
 
 **Roberto Corella y Javier Armesto**
 
 
 Recuperación de etapas y guardado de avances: [checkpoints](docs/checkpoints.md).
+
+## License / Licencia
+
+Copyright © 2026 Roberto Corella and Javier Armesto. Code and reusable primitives / código y primitivas: [MIT](LICENSE). Educational content / material docente: [CC BY 4.0](LICENSE-CONTENT.md). [Scope / Ámbito](LICENSE-SCOPE.md). Third-party material retains its original terms / Los terceros conservan sus condiciones.

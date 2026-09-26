@@ -32,3 +32,7 @@ Object ranges: App 71200–71249, Test 71300–71349. BC 28.0+ (tested on BC onl
 
 
 Stage recovery and commit instructions (Spanish): [checkpoints](docs/checkpoints.md).
+
+## License / Licencia
+
+Copyright © 2026 Roberto Corella and Javier Armesto. Code and reusable primitives / código y primitivas: [MIT](LICENSE). Educational content / material docente: [CC BY 4.0](LICENSE-CONTENT.md). [Scope / Ámbito](LICENSE-SCOPE.md). Third-party material retains its original terms / Los terceros conservan sus condiciones.
