@@ -34,3 +34,7 @@ Object ranges: App 71200–71249, Test 71300–71349. BC 28.0+ (tested on BC onl
 
 
 Stage recovery and commit instructions (Spanish): [checkpoints](docs/checkpoints.md).
+
+## License
+
+Code and reusable primitives: MIT. Educational content: CC BY 4.0. See [scope and attribution](LICENSE-SCOPE.md); third-party material retains its original terms.

@@ -43,7 +43,7 @@ La rama main contiene el starter; las ramas checkpoint solo ofrecen etapas de re
 
 ## Estado
 
-Material preparado para el taller. Acceso y licencia los anuncian los organizadores; consulta LICENSE cuando se publique. [Ayuda para participantes](docs/help.md).
+Material preparado para el taller. Código y primitivas bajo MIT; textos y material docente bajo CC BY 4.0. Consulta el [ámbito y los créditos](LICENSE-SCOPE.md). Los organizadores anuncian el acceso. [Ayuda para participantes](docs/help.md).
 
 **Roberto Corella y Javier Armesto**
 
