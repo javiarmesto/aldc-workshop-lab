@@ -8,6 +8,7 @@ La instalación se hace **antes** del taller. Si un paso falla, anota la operaci
 
 - VS Code actualizado con **GitHub Copilot Chat** (modo agente) y sesión iniciada. Es la única superficie de la jornada.
 - Extensión **AL Language** y Git.
+- **Node.js LTS**: el instalador de BCQuality del toolkit lo usa para leer `aldc.yaml`. Comprueba con `node --version`.
 - **ALDC 5.0.0**: `code --install-extension javierarmestogonzalez.al-development-collection@5.0.0` y comprueba con `code --list-extensions --show-versions`.
 - **APM** instalado: `apm --version` debe responder. [Instalación](https://microsoft.github.io/apm/).
 - Un **sandbox de Business Central** (28.0 o posterior) con un usuario que pueda publicar extensiones y editar clientes. Comprueba que no tiene otra extensión con objetos en **71200–71349**.

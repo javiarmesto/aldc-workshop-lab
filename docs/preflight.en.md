@@ -10,7 +10,7 @@ Bring VS Code with **GitHub Copilot Chat** or **Claude Code**. This edition uses
 2. Open `aldc-workshop-lab.code-workspace`. Copy `App/.vscode/launch.json.example` and `Test/.vscode/launch.json.example` to `launch.json` with your tenant and sandbox.
 3. Download symbols and compile **App** first; publish it to your sandbox if Test needs the installed app as a dependency. Then download symbols and compile **Test**. Select the appropriate AL project for each operation. Your sandbox must not have another extension using objects **71200–71349**.
 4. Follow [Running the tests](#running-the-tests): with the untouched starter exactly **C02, C03, C04, C11 and C12** fail.
-5. Install APM and check `apm --version`.
+5. Install APM and check `apm --version`. Install Node.js LTS as well (`node --version`): the toolkit's BCQuality installer uses it to read `aldc.yaml`.
 
 ## Selected distributions
 
