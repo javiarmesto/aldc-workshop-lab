@@ -34,6 +34,10 @@ git -C bcquality checkout --detach 07e324ddbc42597c479e041e06a7833740e05d0f
 
 La rama main contiene el starter; las ramas checkpoint solo ofrecen etapas de recuperación. La solución de referencia completa no se distribuye aquí durante el taller.
 
+## Reto opcional desde requisitos
+
+Después de los ocho laboratorios puedes preparar un proyecto independiente que parte solo del [encargo de negocio](challenges/customerfollowup-requisitos/README.md). El script `./tools/Prepare-RequirementsChallenge.ps1` crea App y Test vacíos en una carpeta hermana, sin copiar el starter.
+
 ## Datos técnicos
 
 - Business Central 28.0 o posterior (probado en BC online 29), runtime 16.0.
