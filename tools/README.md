@@ -7,6 +7,7 @@ Ejecuta desde la raíz de tu copia, en PowerShell:
 | Momento | Comando | Resultado |
 |---|---|---|
 | [Lab 01](../labs/jornada/01-contrato-y-contexto.md) | `./tools/Prepare-Lab01.ps1` | Copia las seis primitivas y recursos. Conserva el archivo de instrucciones de ALDC. |
+| [Reto opcional](../challenges/customerfollowup-requisitos/README.md) | `./tools/Prepare-RequirementsChallenge.ps1` | Crea un proyecto aislado desde requisitos, sin objetos AL ni tests preparados. |
 | [Lab 02](../labs/jornada/02-plugin-utilizable.md), preparar | `./tools/Prepare-Lab02.ps1 -Action Prepare` | Crea `../review-dates-lab` y quita los sufijos `.example`. |
 | Lab 02, retirar duplicados | `./tools/Prepare-Lab02.ps1 -Action DisableLocal` | Mueve skill, agente y prompt locales a `../lab01-primitivas-reserva`. |
 | Volver a componentes locales | `./tools/Prepare-Lab02.ps1 -Action RestoreLocal` | Restaura esos tres componentes. Desactiva antes el plugin en VS Code. |
