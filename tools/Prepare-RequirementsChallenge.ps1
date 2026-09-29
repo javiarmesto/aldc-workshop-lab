@@ -26,8 +26,8 @@ if ($Destination.Equals($ProjectRoot, $comparison) -or $Destination.StartsWith($
 }
 if (Test-Path -LiteralPath $Destination) { throw "El destino ya existe; no se sobrescribe: $Destination" }
 
-$requirements = Join-Path $ProjectRoot 'challenges/customer-followup-requisitos/requirements.es.md'
-$readme = Join-Path $ProjectRoot 'challenges/customer-followup-requisitos/README.md'
+$requirements = Join-Path $ProjectRoot 'challenges/customerfollowup-requisitos/requirements.es.md'
+$readme = Join-Path $ProjectRoot 'challenges/customerfollowup-requisitos/README.md'
 $sourceManifest = Join-Path $ProjectRoot 'App/app.json'
 $launchExample = Join-Path $ProjectRoot 'App/.vscode/launch.json.example'
 foreach ($file in @($requirements, $readme, $sourceManifest, $launchExample)) {
