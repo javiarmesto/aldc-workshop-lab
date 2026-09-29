@@ -61,7 +61,7 @@ No modifiques código ni confundas consultar símbolos con compilar App.
 
 ## Checkpoint humano y revisión cruzada
 
-La otra persona explica las reglas con sus palabras, anotáis una corrección si hay ambigüedad y registráis **aprobar, devolver con cambios o detener**. Usa la [ficha de checkpoint](../../templates/evidence/human-checkpoint.md), la [hoja de especificación](../material/specification-workbook.md) y la [ficha de diseño BCQuality](../../templates/evidence/bcq-design-evidence.md). Haz commit al aprobar.
+La otra persona explica las reglas con sus palabras, anotáis una corrección si hay ambigüedad y registráis **aprobar, devolver con cambios o detener**. Si una decisión afecta al comportamiento o falta evidencia relevante, devuelve el documento a Architect, concreta qué debe revisar y vuelve a comprobarlo antes de aprobar. Iterar con el documento es una buena práctica de diseño; si ya cumple el objetivo y las decisiones necesarias están claras, podéis seguir sin rondas adicionales de pulido. Usa la [ficha de checkpoint](../../templates/evidence/human-checkpoint.md), la [hoja de especificación](../material/specification-workbook.md) y la [ficha de diseño BCQuality](../../templates/evidence/bcq-design-evidence.md). Haz commit al aprobar.
 
 ## Aprobar arquitectura y especificación
 
