@@ -18,7 +18,7 @@ En el Lab 03 mejoraste una instrucción del plugin y observaste su efecto. Ahora
 
 ALDC y sus primitivas ya están preparados desde el preflight. No necesitas reinstalarlos ni restaurar las copias locales del ejercicio. Continúa en tu workspace y rama de trabajo, con GetReviewStatus resuelto y MarkReviewed pendiente.
 
-Abre un chat nuevo y selecciona **al-architect**. Primero pide la arquitectura y revisa su respuesta. Solo después de aprobarla utiliza **al-spec.create**. La implementación corresponde al Lab 05.
+Abre un chat nuevo y selecciona **al-architect**. Primero pide la arquitectura y revisa su respuesta. Solo después de aprobarla selecciona **AL Spec Agent** y pídele la especificación. La implementación corresponde al Lab 05.
 
 Para el diseño, consulta BCQuality como conocimiento desde la carpeta del workspace; identifica las fuentes realmente leídas y las limitaciones de acceso. Conserva la implementación existente de GetReviewStatus al especificar el comportamiento completo.
 
@@ -43,7 +43,7 @@ No modifiques código ni confundas consultar símbolos con compilar App.
 
 > Analiza Customer Follow-up con el contrato y el starter. Define alcance, objetos, dependencias y separación entre interfaz y lógica. Consulta los símbolos y el conocimiento BCQuality disponible que resulte pertinente. Expón decisiones abiertas y criterios de diseño con su origen. Entrega arquitectura; todavía no implementes.
 
-## Petición al Spec Agent (`al-spec.create`)
+## Petición al AL Spec Agent
 
 > A partir de la arquitectura aprobada, especifica GetReviewStatus y MarkReviewed. Incluye entradas, validaciones, efectos, casos C01–C12 y límites del alcance. Declara los criterios BCQuality seleccionados y sus referencias en .bcq-criteria.json. Separa las decisiones pendientes. No generes todavía el código AL.
 
@@ -73,7 +73,7 @@ OnBefore/OnAfter. Registra mi aprobación y la evidencia de fuentes
 y símbolos realmente consultados. No implementes ni delegues código.
 ```
 
-Ejecuta después **al-spec.create** con la petición de esta guía. Esperamos entradas, validaciones, efectos, persistencia y C01–C12, sin nuevos objetos ni código. starter_expected conserva la referencia del starter original; no se actualiza ni es una discrepancia tras Lab 01.
+Selecciona después **AL Spec Agent** y envíale la petición de esta guía. Esperamos entradas, validaciones, efectos, persistencia y C01–C12, sin nuevos objetos ni código. starter_expected conserva la referencia del starter original; no se actualiza ni es una discrepancia tras Lab 01.
 
 Tras revisarla, utiliza solo si estás de acuerdo:
 
