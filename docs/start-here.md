@@ -4,12 +4,11 @@
 
 Vas a trabajar sobre tu propia copia de **Customer Follow-up**, con App y Test ya preparados. No necesitas el repositorio privado de instructores ni su solución de referencia. Completa la instalación antes de la sesión; durante el taller seguirás una guía por laboratorio.
 
-## 1. Elige tu recorrido
+## 1. Prepara la jornada de Companial
 
 | Sesión | Herramienta | Preparación | Primera práctica |
 |---|---|---|---|
 | Jornada completa, castellano | GitHub Copilot Chat en VS Code o Insiders | [Preflight ES](preflight.md) | [Lab 01](../labs/jornada/01-contrato-y-contexto.md) |
-| Directions, inglés | Copilot Chat o Claude Code, según la ruta ofrecida por los ponentes | [Preflight EN](preflight.en.md) | [Directions Lab 1](../labs/directions/README.md#lab-1-specification) |
 
 Para ejecutar AL necesitas acceso a un sandbox de Business Central y permisos de publicación; para el recorrido de cliente, permisos habituales de edición de Customer más OW FOLLOWUP. Acuerda el sandbox con la organización. Si dos personas publican la misma app en el mismo entorno, pueden sobrescribir sus versiones aunque usen compañías diferentes.
 
@@ -60,13 +59,13 @@ El comando de editor debe estar instalado en tu PATH. También puedes usar **Arc
 | `C:\Workshops\mi-workshop` | Tu repositorio, con App, Test, docs, labs, tools y evidence |
 | `C:\Workshops\bcquality` | Corpus externo en la revisión fijada |
 | `C:\Workshops\review-dates-lab` | Se crea al llegar al Lab 02; no hace falta ahora |
-| `C:\Workshops\mi-workshop\apm-consumer` | Se crea en Lab 07 / Directions Lab 4; no hace falta ahora |
+| `C:\Workshops\mi-workshop\apm-consumer` | Se crea en Lab 07; no hace falta ahora |
 
 Si un paso de clonación falló después de crear alguna carpeta, conserva lo descargado y retoma solo el paso fallido. No repitas el bloque completo ni borres tu trabajo para eliminar el aviso de carpeta existente.
 
 ## 4. Completa el preflight
 
-Sigue [ES](preflight.md) o [EN](preflight.en.md) según tu sesión. Prepara tu tenant y sandbox en los dos launch.json, instala ALDC y el toolkit en la raíz del proyecto, descarga símbolos y comprueba herramientas y tests. No uses datos de conexión del instructor. `aldc.yaml` se prepara con el toolkit: su ausencia en la plantilla recién clonada es normal.
+Sigue la [preparación previa en castellano](preflight.md). Prepara tu tenant y sandbox en los dos launch.json, instala ALDC y el toolkit en la raíz del proyecto, descarga símbolos y comprueba herramientas y tests. No uses datos de conexión del instructor. `aldc.yaml` se prepara con el toolkit: su ausencia en la plantilla recién clonada es normal.
 
 Antes de empezar deberías poder marcar:
 
@@ -80,13 +79,11 @@ Antes de empezar deberías poder marcar:
 
 Usa [la ficha de preflight](../templates/evidence/preflight.md) como `evidence/preflight.md`. No contiene contraseñas ni tokens.
 
-**El starter tiene fallos deliberados.** En la suite completa deben pasar 7/12 y fallar exactamente C02, C03, C04, C11 y C12. Tras Lab 01 se esperan 10/12; tras Lab 05 / Directions Lab 2, 12/12. Otros fallos necesitan diagnóstico. No cambies `cases.csv → starter_expected` al avanzar.
+**El starter tiene fallos deliberados.** En la suite completa deben pasar 7/12 y fallar exactamente C02, C03, C04, C11 y C12. Tras Lab 01 se esperan 10/12; tras Lab 05, 12/12. Otros fallos necesitan diagnóstico. No cambies `cases.csv → starter_expected` al avanzar.
 
 ## 5. Durante el taller
 
 En la jornada, sigue [el índice de ocho labs](../labs/README.md). Cada guía indica objetivo, helper previo, agente, prompt, comprobación y guardado. Ejecuta `./tools/Test-Lab01.ps1` antes del primero y el correspondiente al avanzar. PRESENTE no equivale a aprobado: completa también los pasos MANUAL.
-
-Directions sigue [su propia guía de cuatro labs](../labs/directions/README.md); los helpers numerados 01–08 corresponden a la jornada, no a esa numeración.
 
 Mantén ALDC preparado durante toda la jornada. Labs 01–03 añaden y trasladan primitivas del ejercicio; Lab 04 empieza a usar explícitamente Architect y Spec Agent. No implementes por adelantado todos los TODOs: cada etapa tiene su objetivo.
 
