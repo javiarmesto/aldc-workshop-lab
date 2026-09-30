@@ -29,6 +29,12 @@ function CheckPlan([string]$Pattern) {
     if ($found.Count -eq 0) { Report 'REVISAR' "No encontrado $Pattern bajo $PlansPath; ajusta -PlansPath al plans.root real." }
     foreach ($file in $found) { Report 'PRESENTE' $file.FullName }
 }
+function CheckBCQualitySelection {
+    $found = @(Get-ChildItem -LiteralPath $PlansPath -Recurse -File -ErrorAction SilentlyContinue |
+        Where-Object { $_.Name -like '*.bcq-criteria.json' -or $_.Name -like '*.bcq-selection.json' })
+    if ($found.Count -eq 0) { Report 'REVISAR' "No se encontró selección BCQuality bajo $PlansPath; comprueba plans.root." }
+    foreach ($file in $found) { Report 'PRESENTE' $file.FullName }
+}
 Report 'INFO' ("Lab {0:00}: comprobaciones de lectura, no instala ni modifica archivos." -f $Lab)
 Report 'INFO' 'PRESENTE no significa cargado por el agente ni validado funcionalmente.'
 LocalPath 'contract.es.md'
@@ -77,14 +83,14 @@ switch ($Lab) {
     5 {
         CheckPlan '*.architecture.md'
         CheckPlan '*.spec.md'
-        CheckPlan '*.bcq-criteria.json'
+        CheckBCQualitySelection
         LocalPath 'App/.vscode/launch.json'
         LocalPath 'Test/.vscode/launch.json'
         Report 'MANUAL' 'Lee las aprobaciones, comprueba delegacion y sandbox de App/Test. No se muestran datos de launch.json.'
         Report 'MANUAL' 'Tras implementar: publica App y ejecuta C01-C12. Compilar no demuestra publicacion ni 12/12.'
     }
     6 {
-        CheckPlan '*.bcq-criteria.json'
+        CheckBCQualitySelection
         LocalPath 'evidence/lab05-run-note.md'
         CheckPath (Join-Path $BCQualityPath 'skills/entry.md')
         if ($BaseCommit -and $IncrementCommit -and $hasGit) {
