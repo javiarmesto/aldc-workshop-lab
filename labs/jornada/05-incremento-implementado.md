@@ -100,7 +100,7 @@ He ejecutado manualmente <casos> tras publicar App en <sandbox>.
 Resultado real: <resultado y errores, si existen>.
 Regístralo en evidence/lab05-run-note.md con fecha <fecha>, atribuyéndome
 la ejecución. No inventes logs ni capturas.
-Actualiza el cierre, plan y memory.md. Si hay fallos, conserva la
+Actualiza el cierre y el plan; actualiza memory.md solo si existe en\nel proyecto. Si hay fallos, conserva la
 aceptación pendiente. Distingue la revisión directa de criterios de la
 ejecución del flujo BCQuality y comprueba los recuentos del informe.
 No cambies más código ni tests, no uses Git y no empieces el Lab 06.
