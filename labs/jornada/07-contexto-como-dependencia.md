@@ -10,7 +10,11 @@ Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test
 ./tools/Test-Lab07.ps1
 ```
 
-Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+**Qué aprenderás con esta comprobación:** comprobar qué soporta APM antes de instalar el paquete en un consumidor separado.
+
+**Qué hace `Test-Lab07.ps1`:** llama a `Test-LabPrerequisites.ps1` para comprobar el contrato y App/Test, Git, `apm --version`, ayudas de `install` y `audit`, paquete local, su README y manifiesto; avisa si `apm-consumer` ya existe. Es una comprobación de lectura: no instala ni modifica archivos, no compila ni ejecuta tests. Las líneas `MANUAL` te piden confirmar el soporte real de paquete local, `--target copilot` y `--frozen` en tu versión de APM. `PRESENTE` solo acredita que la ruta existe, no que el agente la haya usado ni que el laboratorio esté aprobado.
+
+Lee `FALTA` y `REVISAR` antes de continuar. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
 
 ## Pasos
 
