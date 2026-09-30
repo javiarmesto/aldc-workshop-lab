@@ -10,7 +10,11 @@ Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test
 ./tools/Test-Lab06.ps1
 ```
 
-Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+**Qué aprenderás con esta comprobación:** preparar una revisión trazable desde los dos commits y la fuente BCQuality.
+
+**Qué hace `Test-Lab06.ps1`:** llama a `Test-LabPrerequisites.ps1` para comprobar el contrato y App/Test, Git, selección BCQuality, nota del Lab 05 y entrada de BCQuality; con `-BaseCommit` y `-IncrementCommit` muestra el diff local de la codeunit. Es una comprobación de lectura: no instala ni modifica archivos, no compila ni ejecuta tests. Las líneas `MANUAL` te piden confirmar que Reviewer vea el diff y aplique el protocolo BCQuality; un archivo presente no demuestra ejecución del proveedor. `PRESENTE` solo acredita que la ruta existe, no que el agente la haya usado ni que el laboratorio esté aprobado.
+
+Lee `FALTA` y `REVISAR` antes de continuar. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
 
 ## Preparar la revisión
 
