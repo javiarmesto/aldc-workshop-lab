@@ -12,7 +12,7 @@ Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test
 
 **Qué aprenderás con esta comprobación:** preparar una revisión trazable desde los dos commits y la fuente BCQuality.
 
-**Qué hace `Test-Lab06.ps1`:** llama a `Test-LabPrerequisites.ps1` para comprobar el contrato y App/Test, Git, selección BCQuality, nota del Lab 05 y entrada de BCQuality; con `-BaseCommit` y `-IncrementCommit` muestra el diff local de la codeunit. Es una comprobación de lectura: no instala ni modifica archivos, no compila ni ejecuta tests. Las líneas `MANUAL` te piden confirmar que Reviewer vea el diff y aplique el protocolo BCQuality; un archivo presente no demuestra ejecución del proveedor. `PRESENTE` solo acredita que la ruta existe, no que el agente la haya usado ni que el laboratorio esté aprobado.
+**Qué hace `Test-Lab06.ps1`:** llama a `Test-LabPrerequisites.ps1` para comprobar el contrato y App/Test, Git, selección BCQuality, nota del Lab 05 y entrada de BCQuality; con `-BaseCommit` y `-IncrementCommit` muestra el diff local de la codeunit usando `--ignore-space-at-eol` para evitar ruido de finales de línea. Comprueba el cambio sustantivo y no atribuyas modificaciones a líneas que solo difieren en formato. Es una comprobación de lectura: no instala ni modifica archivos, no compila ni ejecuta tests. Las líneas `MANUAL` te piden confirmar que Reviewer vea el diff y aplique el protocolo BCQuality; un archivo presente no demuestra ejecución del proveedor. `PRESENTE` solo acredita que la ruta existe, no que el agente la haya usado ni que el laboratorio esté aprobado.
 
 Lee `FALTA` y `REVISAR` antes de continuar. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
 
@@ -35,6 +35,9 @@ No repitas los tests ni presentes esa ejecución como tuya.
 1. Obtén el diff de App/src/CustomerFollowUpMgt.Codeunit.al mediante
 Git en lectura o herramientas GitHub equivalentes. Si usas el patch de
 un commit, verifica que su padre es la base; si no, compara ambas refs.
+Si el patch completo muestra un cambio de finales de línea, usa también
+`git diff --ignore-space-at-eol <commit-base> <commit-lab05> --
+App/src/CustomerFollowUpMgt.Codeunit.al` y declara ese filtro.
 Si no tienes ninguna vía, pide el diff y espera antes de revisar.
 
 2. Lee aldc.yaml y el pipeline ALDC. Sigue el punto de entrada y el
@@ -64,7 +67,7 @@ AL ni tests y no ejecutes operaciones de escritura en Git.
 
 Puedes facilitarlo tú:
 ```powershell
-git diff <commit-base> <commit-lab05> -- App/src/CustomerFollowUpMgt.Codeunit.al
+git diff --ignore-space-at-eol <commit-base> <commit-lab05> -- App/src/CustomerFollowUpMgt.Codeunit.al
 ```
 
 La alternativa GitHub es válida para commits publicados. Una lista ordenada de commits no sustituye comprobar el padre o comparar explícitamente ambas refs. Leer únicamente el archivo actual no prueba qué cambió.
