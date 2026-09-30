@@ -63,7 +63,7 @@ Recarga la ventana y abre un **chat nuevo**. Repite exactamente el prompt del La
 
 > Revisa GetReviewStatus de Customer Follow-up usando la skill review-date-rules del plugin review-dates-lab. Contrasta el código con contract.es.md y los casos límite. No modifiques archivos. Indica el origen y la ruta de la skill utilizada, los hallazgos y las comprobaciones pendientes. Consulta además mediante Microsoft Learn MCP la API WorkDate y explica su relación con la fecha explícita que recibe esta función. Si no puedes acceder a la skill o al MCP, indícalo.
 
-Conserva el mismo modelo y herramientas si es posible; registra cualquier diferencia. Comprueba en las lecturas de la sesión o en Agent Debug Logs la ruta y el contenido de la skill usada.
+Conserva el mismo modelo y herramientas si es posible; registra cualquier diferencia. Comprueba en las lecturas de la sesión o en Agent Debug Logs la ruta y el contenido de la skill usada. Revisa también la procedencia de los recursos auxiliares: el agente puede cargar `SKILL.md` del plugin externo y `boundary-cases.md` de la plantilla del repo en la misma revisión. Registra esa mezcla como límite de la comparación, sin atribuir el resultado solo al cambio de la skill.
 
 Si la instalación utiliza una copia distinta de la carpeta editada y sigue leyendo el contenido anterior, actualiza o vuelve a instalar el plugin desde su fuente mediante Personalización. Abre otra sesión y comprueba la lectura antes de comparar. No añadas un segundo registro del mismo plugin. Si no consigues cargar el cambio, registra el bloqueo: todavía no se ha probado la nueva instrucción.
 
