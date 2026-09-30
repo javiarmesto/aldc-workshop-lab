@@ -10,7 +10,11 @@ Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test
 ./tools/Test-Lab03.ps1
 ```
 
-Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+**Qué aprenderás con esta comprobación:** asegurar que existe la referencia del Lab 02 antes de comparar la respuesta inicial y la nueva.
+
+**Qué hace `Test-Lab03.ps1`:** llama a `Test-LabPrerequisites.ps1` para comprobar el contrato y App/Test, Git, la skill de la ruta externa del plugin y `evidence/lab02-run-note.md`. Es una comprobación de lectura: no instala ni modifica archivos, no compila ni ejecuta tests. Las líneas `MANUAL` te piden confirmar la ruta realmente cargada antes y después y el efecto observable de la edición. `PRESENTE` solo acredita que la ruta existe, no que el agente la haya usado ni que el laboratorio esté aprobado.
+
+Lee `FALTA` y `REVISAR` antes de continuar. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
 
 ## Qué vas a conseguir
 
