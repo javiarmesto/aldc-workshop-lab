@@ -12,7 +12,11 @@ Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test
 ./tools/Test-Lab01.ps1
 ```
 
-Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+**Qué aprenderás con esta comprobación:** identificar el starter y las primitivas necesarias antes de cambiar `GetReviewStatus`.
+
+**Qué hace `Test-Lab01.ps1`:** llama a `Test-LabPrerequisites.ps1` para comprobar el contrato, los manifiestos App/Test, Git, `aldc.yaml`, `Prepare-Lab01.ps1` y las plantillas de primitivas y plugin. Es una comprobación de lectura: no instala ni modifica archivos, no compila ni ejecuta tests. Las líneas `MANUAL` te piden confirmar la carga efectiva de las primitivas en un chat nuevo. `PRESENTE` solo acredita que la ruta existe, no que el agente la haya usado ni que el laboratorio esté aprobado.
+
+Lee `FALTA` y `REVISAR` antes de continuar. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
 
 ## Preparar las primitivas
 
