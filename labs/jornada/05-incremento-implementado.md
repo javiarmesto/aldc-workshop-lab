@@ -10,7 +10,11 @@ Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test
 ./tools/Test-Lab05.ps1
 ```
 
-Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+**Qué aprenderás con esta comprobación:** distinguir un entorno preparado de una implementación validada. El helper confirma que los documentos aprobados y las configuraciones locales están localizables antes de pedir a Conductor que planifique el incremento.
+
+**Qué hace `Test-Lab05.ps1`:** llama a `Test-LabPrerequisites.ps1 -Lab 5`. Lee el contrato y los `app.json`, consulta rama, SHA y estado de Git, busca arquitectura, spec y selección de criterios BCQuality bajo `.github/plans`, y comprueba la presencia de `App/.vscode/launch.json` y `Test/.vscode/launch.json`. Muestra `PRESENTE`, `FALTA` o `REVISAR` para los archivos, y `MANUAL` para lo que debes confirmar en el editor: aprobaciones, delegación y sandbox. No instala, modifica, publica, compila ni ejecuta tests; tampoco imprime el contenido de `launch.json`. `PRESENTE` no demuestra que Conductor pueda acceder a un recurso.
+
+Lee sus resultados antes de continuar. Si ves `REVISAR` para criterios BCQuality, comprueba la selección real del proyecto antes de concluir que faltan: pueden estar en `customer-follow-up.bcq-selection.json`. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
 
 ## Preparar el chat
 
