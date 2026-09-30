@@ -49,7 +49,7 @@ No modifiques código ni confundas consultar símbolos con compilar App.
 
 ## Petición al AL Spec Agent
 
-> A partir de la arquitectura aprobada, especifica GetReviewStatus y MarkReviewed. Incluye entradas, validaciones, efectos, casos C01–C12 y límites del alcance. Declara los criterios BCQuality seleccionados y sus referencias en .bcq-criteria.json. Separa las decisiones pendientes. No generes todavía el código AL.
+> A partir de la arquitectura aprobada, especifica GetReviewStatus y MarkReviewed. Incluye entradas, validaciones, efectos, casos C01–C12 y límites del alcance. Declara los criterios BCQuality seleccionados y sus referencias en un artefacto de selección verificable (por ejemplo, `.bcq-selection.json` o `.bcq-criteria.json`). Separa las decisiones pendientes. No generes todavía el código AL.
 
 ## Reglas que deben quedar cerradas
 
@@ -91,7 +91,7 @@ ni inicies implementación. Si hay conflicto de instrucciones, indícalo.
 
 ## Guardar el Lab 04
 
-Localiza los documentos bajo el plans.root real de aldc.yaml. Añade explícitamente arquitectura, especificación, selección y criterios BCQuality, aprobación y memory.md. No añadas toda .github/plans porque puede contener telemetría.
+Localiza los documentos bajo el plans.root real de aldc.yaml. Añade explícitamente arquitectura, especificación y artefactos BCQuality; incluye la aprobación y `memory.md` si existen como archivos separados. La aprobación puede estar en la propia spec. Si un agente afirma haber actualizado `memory.md` pero no existe, registra la discrepancia sin crear un archivo vacío para satisfacer la guía. No añadas toda .github/plans porque puede contener telemetría.
 
 ```powershell
 git status --short
