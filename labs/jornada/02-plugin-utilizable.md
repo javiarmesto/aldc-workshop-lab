@@ -10,7 +10,11 @@ Desde la raíz del repositorio, ejecuta el [helper de este lab](../../tools/Test
 ./tools/Test-Lab02.ps1
 ```
 
-Lee sus resultados antes de continuar. No instala ni modifica el entorno; distingue archivos presentes de comprobaciones manuales dentro del agente. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
+**Qué aprenderás con esta comprobación:** separar la presencia de una plantilla del registro y uso real de un plugin.
+
+**Qué hace `Test-Lab02.ps1`:** llama a `Test-LabPrerequisites.ps1` para comprobar el contrato y App/Test, Git, `Prepare-Lab02.ps1` y la plantilla del manifiesto; si existe la ruta del plugin, comprueba también `plugin.json` y `SKILL.md`. Es una comprobación de lectura: no instala ni modifica archivos, no compila ni ejecuta tests. Las líneas `MANUAL` te piden confirmar el registro en Customization, la skill realmente leída y la llamada a Microsoft Learn. `PRESENTE` solo acredita que la ruta existe, no que el agente la haya usado ni que el laboratorio esté aprobado.
+
+Lee `FALTA` y `REVISAR` antes de continuar. [Parámetros y estados](../../tools/README.md#helpers-de-comprobación).
 
 ## Qué viene preparado y qué haces tú
 
