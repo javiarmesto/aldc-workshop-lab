@@ -97,7 +97,7 @@ switch ($Lab) {
             if ($BaseCommit -notmatch '^[0-9a-fA-F]{7,40}$' -or $IncrementCommit -notmatch '^[0-9a-fA-F]{7,40}$') {
                 throw 'Usa SHA de commits, de 7 a 40 caracteres hexadecimales.'
             }
-            & git -C $ProjectRoot diff $BaseCommit $IncrementCommit -- App/src/CustomerFollowUpMgt.Codeunit.al
+            & git -C $ProjectRoot diff --ignore-space-at-eol $BaseCommit $IncrementCommit -- App/src/CustomerFollowUpMgt.Codeunit.al
             if ($LASTEXITCODE -ne 0) { Report 'REVISAR' 'No se pudo obtener el diff local; usa GitHub o facilita el diff al revisor.' }
         } else { Report 'MANUAL' 'Indica -BaseCommit y -IncrementCommit para mostrar el diff local, o usa herramientas GitHub equivalentes.' }
         Report 'MANUAL' 'Reviewer: confirma acceso efectivo al diff y aplicacion del protocolo BCQuality. Devuelve informe en chat si es solo lectura.'
