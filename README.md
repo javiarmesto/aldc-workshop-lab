@@ -38,6 +38,8 @@ La rama main contiene el starter; las ramas checkpoint solo ofrecen etapas de re
 
 Después de los ocho laboratorios puedes preparar un proyecto independiente que parte solo del [encargo de negocio](challenges/customerfollowup-requisitos/README.md). El script `./tools/Prepare-RequirementsChallenge.ps1` crea App y Test vacíos en una carpeta hermana, sin copiar el starter.
 
+También puedes usar el [mini reto de referencia del cliente al liberar pedidos](challenges/referencia-cliente-requisitos/README.md): otro proyecto desde cero, con requisitos, casos de aceptación y guion para explicar ALDC.
+
 ## Datos técnicos
 
 - Business Central 28.0 o posterior (probado en BC online 29), runtime 16.0.
