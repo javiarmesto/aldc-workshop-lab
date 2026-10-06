@@ -1,5 +1,12 @@
 # ALDC Workshop Lab · Customer Follow-up
 
+## Elegir revisión y comprobar tu copia
+
+Para repetir la edición Companial del 1 de octubre de 2026, consulta la [revisión fijada de la plantilla](https://github.com/javiarmesto/aldc-workshop-lab/tree/11e05d37db2953d3fd9cf1726977daf2eaf5e688). **Use this template** copia el `main` actual; los retos añadidos posteriormente tienen su propio recorrido. Registra el commit de tu copia y las revisiones de ALDC/BCQuality junto a la evidencia.
+
+Sigue [preflight](docs/preflight.md) antes de publicar `App/` y `Test/`. El objetivo es documentar los fallos iniciales del starter y obtener los 12 casos de aceptación al terminar; el estado real debe salir de tu ejecución en sandbox. La afirmación de pruebas previas en BC29 de esta guía pertenece a los autores: la revisión del 6 de octubre de 2026 no ha repetido compilación ni tests AL. La referencia de edición no sustituye la comprobación de tus versiones y permisos.
+
+
 **¿Primera vez? [Empieza aquí](docs/start-here.md): crea tu copia, prepara el entorno y abre el primer lab.**
 
 Repositorio de prácticas de los talleres de **Roberto Corella y Javier Armesto** sobre desarrollo AL con agentes y ALDC. Es una plantilla: cada participante crea su propia copia y trabaja en ella durante el taller y después.
