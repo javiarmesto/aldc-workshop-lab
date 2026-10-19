@@ -1,3 +1,5 @@
+> **Directions EMEA v11 (19 Oct 2026):** use [directions-60/](directions-60/README.md): one 60-minute build. Open its directions.code-workspace. Root App/Test and the older lab guides remain for Companial/historical use.
+
 # ALDC Workshop Lab · Customer Follow-up
 
 **First visit? [Start here](docs/start-here.en.md): create your copy, prepare your environment and open the first lab.**

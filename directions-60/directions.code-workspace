@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "App"
+    },
+    {
+      "path": "Test"
+    }
+  ],
+  "settings": {
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+      "${CodeCop}",
+      "${UICop}"
+    ]
+  }
+}

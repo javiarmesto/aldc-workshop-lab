@@ -1,0 +1,18 @@
+{
+  "id": "d7505f41-2cc7-4b86-ae1f-06ba4144a861",
+  "name": "Directions Customer Review",
+  "publisher": "Roberto Corella and Javier Armesto",
+  "version": "1.0.0.0",
+  "platform": "28.0.0.0",
+  "application": "28.0.0.0",
+  "runtime": "16.0",
+  "features": [
+    "NoImplicitWith"
+  ],
+  "idRanges": [
+    {
+      "from": 71200,
+      "to": 71249
+    }
+  ]
+}
