@@ -1,5 +1,5 @@
-# Directions �� one build, 60 minutes
-Roberto Corella and Javier Armesto �� edition 2026-10-19 / v11
+# Directions Â· one build, 60 minutes
+Roberto Corella and Javier Armesto Â· edition 2026-10-19 / v11
 
 Build **Customer Review with History** from a technical scaffold using ALDC. Medium scope, one working copy, one approved specification, one acceptance decision.
 
@@ -16,4 +16,3 @@ The scaffold contains manifests and a control test, not the finished feature. Ac
 Reference App and Test packages have been compiled locally against BC28.2 symbols. Sandbox execution, UI acceptance and a timed end-to-end rehearsal remain required; no passing runtime count is claimed. See the instructor readiness record for the release decision.
 
 The first 45 minutes explain ALDC through an instructor case. These 60 minutes include your build, acceptance and closing. APM installation is not part of this exercise.
-
