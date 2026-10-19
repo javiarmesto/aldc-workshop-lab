@@ -1,7 +1,7 @@
 # Acceptance record
 
 - Date / participants:
-- Repository commit and local uncommitted changes:
+- Starting ZIP filename/edition and local changes (Git commit only if available):
 - Approved spec revision / approver:
 - Harness / model / ALDC artifact + toolkit revision + profile:
 - BC environment / build / company:

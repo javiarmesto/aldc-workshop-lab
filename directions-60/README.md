@@ -3,7 +3,7 @@ Roberto Corella and Javier Armesto Â· edition 2026-10-19 / v11
 
 Build **Customer Review with History** from a technical scaffold using ALDC. Medium scope, one working copy, one approved specification, one acceptance decision.
 
-**Open `directions-60/directions.code-workspace`. Do not use the root App/Test projects: those belong to the earlier Companial exercise.**
+**Download the lab ZIP from the workshop portal, extract it and open `directions-60/directions.code-workspace` in VS Code. No GitHub repository is required.**
 
 1. Complete [preflight](preflight.md) before the workshop.
 2. Read the [business contract](contract.md) and fixed [test interfaces](api-contract.md).

@@ -1,6 +1,6 @@
 # Before the workshop clock
 
-1. Create your repository using the shared template and clone it. Open **directions-60/directions.code-workspace**, never the root workshop workspace for this edition.
+1. Download the laboratory ZIP from the workshop portal and extract all files to a local folder. Open **directions-60/directions.code-workspace** in VS Code. No GitHub account, repository creation or cloning is required.
 2. Use an isolated Business Central sandbox and a test company. The earlier workshop uses the same object ranges: do not co-install it. Confirm permission to publish App/Test and run tests.
 3. Install AL Language, your chosen coding assistant and ALDC. Select one primary harness for your own run; changing harness during the 60 minutes is not part of the exercise.
 4. Baseline candidate: ALDC 5.0.3. The extension source manifest was 5.0.3 on 19 October; that is not evidence of the artifact installed on your machine. Record VSIX/plugin version, toolkit revision/profile and Doctor output. Use 5.0.4 only after its artifact is available and the exact route passes rehearsal. No mid-workshop updates.

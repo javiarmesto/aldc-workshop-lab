@@ -1,10 +1,10 @@
 # Your 60-minute ALDC build
 
-One feature. Keep the same repository, contract and evidence from start to finish.
+One feature. Keep the same local folder, contract and evidence from start to finish.
 
 | Minute | Action | Output |
 |---|---|---|
-| 00–05 | Read contract and inspect scaffold | Starting revision and scope |
+| 00–05 | Read contract and inspect scaffold | Starting ZIP edition and scope |
 | 05–13 | Architect, then specification | Compact architecture/spec and test mapping |
 | 13–17 | Review with a partner and approve | Named decision tied to spec revision |
 | 17–40 | Conductor coordinates build and tests | Functional objects, actual results and diff |
