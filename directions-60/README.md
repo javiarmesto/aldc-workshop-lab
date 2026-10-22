@@ -1,18 +1,13 @@
-# Directions Â· one build, 60 minutes
-Roberto Corella and Javier Armesto Â· edition 2026-10-19 / v11
+# Directions · participant download
 
-Build **Customer Review with History** from a technical scaffold using ALDC. Medium scope, one working copy, one approved specification, one acceptance decision.
+**Roberto Corella and Javier Armesto · one continuous 60-minute build**
 
-**Download the lab ZIP from the workshop portal, extract it and open `directions-60/directions.code-workspace` in VS Code. No GitHub repository is required.**
+The current participant package is [lab v18, available from the portal](https://directions-workshop.vercel.app/materials/Directions-Lab-60min-v18.zip). This repository folder retains an earlier source edition; use the downloaded package for the workshop.
 
-1. Complete [preflight](preflight.md) before the workshop.
-2. Read the [business contract](contract.md) and fixed [test interfaces](api-contract.md).
-3. Follow the [60-minute guide](guide.md).
-4. Follow [test execution](test-execution.md) for the native VS Code or existing test-runner route.
-5. Keep decisions and actual results in [evidence](evidence/acceptance.md).
+Extract the ZIP, open `directions-60/directions.code-workspace`, and follow the included `START-HERE.md`, preflight, contract, guide and acceptance instructions. No GitHub account, repository creation or cloning is required.
 
-The scaffold contains manifests and a control test, not the finished feature. Acceptance tests are supplied in `acceptance-tests/` and activated after your functional interfaces exist. An empty scaffold build or passing control test is not a functional acceptance result.
+Build **Customer Review with History** using ALDC: one working copy, one approved specification and an acceptance decision based on actual evidence.
 
-Reference App and Test packages have been compiled locally against BC28.2 symbols. Sandbox execution, UI acceptance and a timed end-to-end rehearsal remain required; no passing runtime count is claimed. See the instructor readiness record for the release decision.
+The workshop includes 45 minutes of explanation before this 60-minute build. Historical compilation and test results are not acceptance evidence for the current package. Sandbox execution and rehearsal remain subject to instructor verification.
 
-The first 45 minutes explain ALDC through an instructor case. These 60 minutes include your build, acceptance and closing. APM installation is not part of this exercise.
+[Participant portal](https://directions-workshop.vercel.app/) · [Historical Companial index](../docs/HISTORICAL-COMPANIAL.md)
