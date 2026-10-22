@@ -1,5 +1,7 @@
-# Directions EMEA · current laboratory
+# Directions EMEA · one build, 60 minutes
 
-The four-lab / 72-minute edition is superseded by [Directions v11: one build, 60 minutes](../../directions-60/README.md).
+Use the [current participant portal](https://directions-workshop.vercel.app/) and [download the lab ZIP v18](https://directions-workshop.vercel.app/materials/Directions-Lab-60min-v18.zip).
 
-Open `directions-60/directions.code-workspace` and follow its preflight, contract and guide. The root App/Test is the earlier two-TODO exercise, not the current Directions starter. Earlier editions remain in Git history.
+Extract all files, open `directions-60/directions.code-workspace` and follow the package's `START-HERE.md`, preparation instructions and guide. No GitHub account, repository creation or cloning is required.
+
+The previous four-lab / 72-minute route is superseded. The root App/Test starter and its C01–C12 tests belong to the [historical Companial material](../../docs/HISTORICAL-COMPANIAL.md), not the current participant package.
